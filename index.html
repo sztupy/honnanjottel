@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Honnan Jöttél</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/screen.css" />
+  <script src="src/points.js" charset="utf-8"></script>
+  <script src="src/megye.js" charset="utf-8"></script>
+  <script src="src/megye_lakos.js" charset="utf-8"></script>
+  <script src="src/regisztralt.js" charset="utf-8"></script>
+  <script src="src/szavazokor.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+</head>
+<body>
+  <div id="map"></div>
+  <div id="hun"></div>
+  <div id="county"></div>
+  <div id="data"></div>
+  <div id="type">Egyéni</div>
+  <a class="github-fork-ribbon" href="https://github.com/sztupy/honnanjottel" data-ribbon="Info / GitHub" title="Info / GitHub">Info / GitHub</a>
+  <script type="text/javascript">
+    var currentCity = '';
+    var countyCalculationType = 'total';
+    var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+      }),
+      latlng = L.latLng(30, 0);
+
+    var tiles2 = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+      }),
+      latlng2 = L.latLng(47.19801, 19.3);
+
+    var tiles3 = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+      }),
+      latlng3 = L.latLng(47.19801, 19.3);
+
+    var map = L.map('map', { center: latlng, zoom: 3, layers: [tiles] });
+    var hun = L.map('hun', { center: latlng2, zoom: 7, layers: [tiles2] });
+    var county = L.map('county', { center: latlng3, zoom: 7, layers: [tiles3] });
+    var hunLayer;
+    var countyLayer;
+
+    function loadMarkers() {
+      LOCATIONS.forEach(function(point) {
+        var loc = point.data.geometry.location;
+        var marker = L.marker(L.latLng(loc.lat, loc.lng), { title: point.data.formatted_address });
+        marker.on('click',function() {
+          currentCity = point.city;
+          document.getElementById('data').innerHTML = 'Kiválasztott város: ' + point.city;
+          loadKor(point.city);
+        });
+        marker.addTo(map)
+      });
+    }
+
+    function handler(type, foreign_city) {
+      var max = 0;
+      var count = 0;
+      var countCounty = {}
+      REGISZTRALTAK.forEach(function(r) {
+        if (r.foreign_city == foreign_city) {
+          if (r.count > max) {
+            max = r.count;
+          }
+          count += r.count;
+          countCounty[r.county] = countCounty[r.county] || 0;
+          countCounty[r.county] += r.count;
+        }
+      });
+      if (countyCalculationType == 'avg') {
+        for (var l in countCounty) {
+          countCounty[l] = countCounty[l] * MEGYE_LAKOSOK_FIX[l];
+        }
+      }
+      var maxCounty = Math.max(...Object.values(countCounty));
+
+      return function(feature, layer) {
+        for (var i =0; i<REGISZTRALTAK.length; i++) {
+          var r = REGISZTRALTAK[i];
+          if (r.foreign_city == foreign_city) {
+            if (r.code[0] == 'M'+feature.properties.MEGY_KOD && r.code[1] == 'E'+feature.properties.OEVK_STR) {
+              percentage = (r.count*1.0 / max);
+              if (type == 'color') {
+                value = 60-Math.round(percentage * 60);
+                color = 'hsl('+ value +',100%,50%)'
+                return { color: '#000', fillColor: color, opacity: 0.25, fillOpacity: 0.75, weight: 1 };
+              };
+              if (type == 'click') {
+                layer.bindPopup('<b>' + feature.properties.OEVK_NAME +
+                           '</b><br/>Szavazók: ' + r.count + ' (' + ((r.count / count)*100).toFixed(3) + '%)');
+              }
+            }
+            if ((r.code[0] == 'M'+feature.properties.MEGY_KOD || r.code[0] == 'M0'+feature.properties.MEGY_KOD) && feature.properties.OEVK_ID == null) {
+              percentage = (countCounty[r.county]*1.0 / maxCounty);
+              if (type == 'color') {
+                value = 60-Math.round(percentage * 60);
+                color = 'hsl('+ value +',100%,50%)';
+                return { color: '#000', fillColor: color, opacity: 0.25, fillOpacity: 0.75, weight: 1 };
+              }
+              if (type == 'click') {
+                layer.bindPopup('<b>' + feature.properties.MEGY_NEV +
+                           '</b><br/>Szavazók: ' + countCounty[r.county] + ' (' + ((countCounty[r.county] / count)*100).toFixed(3) + '%)');
+              }
+            }
+          }
+        }
+        return { color: '#AAA', fillColor: '#AAA', opacity: 1, fillOpacity: 0.25, weight: 1 };
+      }
+    }
+
+    function loadKor(foreign_city) {
+      if (hunLayer) {
+        hun.removeLayer(hunLayer);
+      }
+      hunLayer = L.geoJSON(SZAVAZOKOR, { style: handler('color', foreign_city), onEachFeature: handler('click', foreign_city) });
+      hunLayer.addTo(hun);
+
+      if (countyLayer) {
+        county.removeLayer(countyLayer);
+      }
+      countyLayer = L.geoJSON(MEGYE, { style: handler('color', foreign_city), onEachFeature: handler('click', foreign_city) });
+      countyLayer.addTo(county);
+    }
+
+    function fillNationalData() {
+      result = {};
+      for (var i =0; i<REGISZTRALTAK.length; i++) {
+        var r = REGISZTRALTAK[i];
+        result[r.code[0]] = result[r.code[0]] || {};
+        result[r.code[0]][r.code[1]] = result[r.code[0]][r.code[1]] || { count:0, code: r.code, county: r.county, foreign_city: '' };
+        result[r.code[0]][r.code[1]].count += r.count;
+      }
+
+      for (var m in result) {
+        for (var n in result[m]) {
+          REGISZTRALTAK.push(result[m][n]);
+        }
+      }
+    }
+
+    fillNationalData();
+    loadMarkers();
+    document.getElementById('data').onclick = function() {
+      currentCity = '';
+      loadKor(currentCity);
+      document.getElementById('data').innerHTML = 'Nemzetközi emigrációs térkép';
+    };
+    document.getElementById('type').onclick = function() {
+      countyCalculationType = (countyCalculationType == 'total') ? 'avg' : 'total';
+      document.getElementById('type').innerHTML = countyCalculationType == 'total' ? 'Egyéni' : 'Lakosságarányos';
+      loadKor(currentCity);
+    };
+    document.getElementById('data').onclick();
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-9404141-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

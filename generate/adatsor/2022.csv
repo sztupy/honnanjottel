@@ -1,4 +1,4 @@
-"Vármegye, főváros",OEVK sorszáma,Székhelye,Külképviselet neve,Választópolgárok száma
+MEGYE,OEVK,SZEKHELY,KULKEPVISELET,VALASZTOK
 BUDAPEST,01,Budapest V. kerület,Abu Dhabi,8
 BUDAPEST,01,Budapest V. kerület,Amman,4
 BUDAPEST,01,Budapest V. kerület,Ankara,6
@@ -19,7 +19,7 @@ BUDAPEST,01,Budapest V. kerület,Buenos Aires,5
 BUDAPEST,01,Budapest V. kerület,Bukarest,5
 BUDAPEST,01,Budapest V. kerület,Canberra,1
 BUDAPEST,01,Budapest V. kerület,Chicago,19
-BUDAPEST,01,Budapest V. kerület,Chisinau,2
+BUDAPEST,01,Budapest V. kerület,Kisinyov,2
 BUDAPEST,01,Budapest V. kerület,Csíkszereda,66
 BUDAPEST,01,Budapest V. kerület,Doha,3
 BUDAPEST,01,Budapest V. kerület,Dublin,19
@@ -30,7 +30,7 @@ BUDAPEST,01,Budapest V. kerület,Genf,22
 BUDAPEST,01,Budapest V. kerület,Hága,111
 BUDAPEST,01,Budapest V. kerület,Hanoi,2
 BUDAPEST,01,Budapest V. kerület,Helsinki,14
-BUDAPEST,01,Budapest V. kerület,Ho Si Minh-város,2
+BUDAPEST,01,Budapest V. kerület,Ho Chi Minh Város,2
 BUDAPEST,01,Budapest V. kerület,Hongkong,2
 BUDAPEST,01,Budapest V. kerület,Houston,9
 BUDAPEST,01,Budapest V. kerület,Innsbruck,13
@@ -49,7 +49,7 @@ BUDAPEST,01,Budapest V. kerület,London,198
 BUDAPEST,01,Budapest V. kerület,Los Angeles,23
 BUDAPEST,01,Budapest V. kerület,Lusaka,1
 BUDAPEST,01,Budapest V. kerület,Luxembourg,24
-BUDAPEST,01,Budapest V. kerület,Lviv,1
+BUDAPEST,01,Budapest V. kerület,Kijev,1
 BUDAPEST,01,Budapest V. kerület,Lyon,14
 BUDAPEST,01,Budapest V. kerület,Madrid,26
 BUDAPEST,01,Budapest V. kerület,Malaga,22
@@ -66,7 +66,7 @@ BUDAPEST,01,Budapest V. kerület,Nairobi,3
 BUDAPEST,01,Budapest V. kerület,New York,49
 BUDAPEST,01,Budapest V. kerület,Nicosia,4
 BUDAPEST,01,Budapest V. kerület,Nürnberg,21
-BUDAPEST,01,Budapest V. kerület,Oslo,12
+BUDAPEST,01,Budapest V. kerület,Osló,12
 BUDAPEST,01,Budapest V. kerület,Ottawa,4
 BUDAPEST,01,Budapest V. kerület,Panamaváros,6
 BUDAPEST,01,Budapest V. kerület,Párizs,47
@@ -178,7 +178,7 @@ BUDAPEST,02,Budapest XI. kerület,Nairobi,2
 BUDAPEST,02,Budapest XI. kerület,New York,42
 BUDAPEST,02,Budapest XI. kerület,Nicosia,7
 BUDAPEST,02,Budapest XI. kerület,Nürnberg,17
-BUDAPEST,02,Budapest XI. kerület,Oslo,19
+BUDAPEST,02,Budapest XI. kerület,Osló,19
 BUDAPEST,02,Budapest XI. kerület,Ottawa,2
 BUDAPEST,02,Budapest XI. kerület,Párizs,50
 BUDAPEST,02,Budapest XI. kerület,Peking,1
@@ -236,7 +236,7 @@ BUDAPEST,03,Budapest XII. kerület,Brüsszel,121
 BUDAPEST,03,Budapest XII. kerület,Buenos Aires,8
 BUDAPEST,03,Budapest XII. kerület,Bukarest,3
 BUDAPEST,03,Budapest XII. kerület,Chicago,18
-BUDAPEST,03,Budapest XII. kerület,Chisinau,1
+BUDAPEST,03,Budapest XII. kerület,Kisinyov,1
 BUDAPEST,03,Budapest XII. kerület,Csíkszereda,32
 BUDAPEST,03,Budapest XII. kerület,Doha,6
 BUDAPEST,03,Budapest XII. kerület,Dublin,27
@@ -285,9 +285,9 @@ BUDAPEST,03,Budapest XII. kerület,München,107
 BUDAPEST,03,Budapest XII. kerület,Nairobi,3
 BUDAPEST,03,Budapest XII. kerület,New York,81
 BUDAPEST,03,Budapest XII. kerület,Nicosia,5
-BUDAPEST,03,Budapest XII. kerület,Nur-Szultán,2
+BUDAPEST,03,Budapest XII. kerület,Asztana,2
 BUDAPEST,03,Budapest XII. kerület,Nürnberg,30
-BUDAPEST,03,Budapest XII. kerület,Oslo,19
+BUDAPEST,03,Budapest XII. kerület,Osló,19
 BUDAPEST,03,Budapest XII. kerület,Ottawa,3
 BUDAPEST,03,Budapest XII. kerület,Panamaváros,2
 BUDAPEST,03,Budapest XII. kerület,Párizs,77
@@ -352,7 +352,7 @@ BUDAPEST,04,Budapest II. kerület,Buenos Aires,1
 BUDAPEST,04,Budapest II. kerület,Bukarest,4
 BUDAPEST,04,Budapest II. kerület,Canberra,1
 BUDAPEST,04,Budapest II. kerület,Chicago,28
-BUDAPEST,04,Budapest II. kerület,Chisinau,1
+BUDAPEST,04,Budapest II. kerület,Kisinyov,1
 BUDAPEST,04,Budapest II. kerület,Csíkszereda,35
 BUDAPEST,04,Budapest II. kerület,Csungking,2
 BUDAPEST,04,Budapest II. kerület,Dakar,1
@@ -367,7 +367,7 @@ BUDAPEST,04,Budapest II. kerület,Gdansk,1
 BUDAPEST,04,Budapest II. kerület,Genf,25
 BUDAPEST,04,Budapest II. kerület,Hága,134
 BUDAPEST,04,Budapest II. kerület,Helsinki,21
-BUDAPEST,04,Budapest II. kerület,Ho Si Minh-város,2
+BUDAPEST,04,Budapest II. kerület,Ho Chi Minh Város,2
 BUDAPEST,04,Budapest II. kerület,Hongkong,4
 BUDAPEST,04,Budapest II. kerület,Houston,10
 BUDAPEST,04,Budapest II. kerület,Innsbruck,14
@@ -375,7 +375,7 @@ BUDAPEST,04,Budapest II. kerület,Isztambul,5
 BUDAPEST,04,Budapest II. kerület,Jakarta,3
 BUDAPEST,04,Budapest II. kerület,Jekatyerinburg,1
 BUDAPEST,04,Budapest II. kerület,Kampala,1
-BUDAPEST,04,Budapest II. kerület,Kazan,2
+BUDAPEST,04,Budapest II. kerület,Kazány,2
 BUDAPEST,04,Budapest II. kerület,Kolozsvár,14
 BUDAPEST,04,Budapest II. kerület,Koppenhága,50
 BUDAPEST,04,Budapest II. kerület,Krakkó,3
@@ -405,7 +405,7 @@ BUDAPEST,04,Budapest II. kerület,Nairobi,2
 BUDAPEST,04,Budapest II. kerület,New York,51
 BUDAPEST,04,Budapest II. kerület,Nicosia,7
 BUDAPEST,04,Budapest II. kerület,Nürnberg,28
-BUDAPEST,04,Budapest II. kerület,Oslo,18
+BUDAPEST,04,Budapest II. kerület,Osló,18
 BUDAPEST,04,Budapest II. kerület,Ottawa,1
 BUDAPEST,04,Budapest II. kerület,Panamaváros,1
 BUDAPEST,04,Budapest II. kerület,Párizs,86
@@ -480,7 +480,7 @@ BUDAPEST,05,Budapest VII. kerület,Genf,25
 BUDAPEST,05,Budapest VII. kerület,Hága,73
 BUDAPEST,05,Budapest VII. kerület,Havanna,2
 BUDAPEST,05,Budapest VII. kerület,Helsinki,11
-BUDAPEST,05,Budapest VII. kerület,Ho Si Minh-város,2
+BUDAPEST,05,Budapest VII. kerület,Ho Chi Minh Város,2
 BUDAPEST,05,Budapest VII. kerület,Hongkong,1
 BUDAPEST,05,Budapest VII. kerület,Houston,9
 BUDAPEST,05,Budapest VII. kerület,Innsbruck,7
@@ -499,7 +499,7 @@ BUDAPEST,05,Budapest VII. kerület,Ljubljana,1
 BUDAPEST,05,Budapest VII. kerület,London,216
 BUDAPEST,05,Budapest VII. kerület,Los Angeles,13
 BUDAPEST,05,Budapest VII. kerület,Luxembourg,28
-BUDAPEST,05,Budapest VII. kerület,Lviv,1
+BUDAPEST,05,Budapest VII. kerület,Kijev,1
 BUDAPEST,05,Budapest VII. kerület,Lyon,4
 BUDAPEST,05,Budapest VII. kerület,Madrid,23
 BUDAPEST,05,Budapest VII. kerület,Malaga,19
@@ -517,9 +517,9 @@ BUDAPEST,05,Budapest VII. kerület,München,61
 BUDAPEST,05,Budapest VII. kerület,Nairobi,2
 BUDAPEST,05,Budapest VII. kerület,New York,45
 BUDAPEST,05,Budapest VII. kerület,Nicosia,6
-BUDAPEST,05,Budapest VII. kerület,Nur-Szultán,1
+BUDAPEST,05,Budapest VII. kerület,Asztana,1
 BUDAPEST,05,Budapest VII. kerület,Nürnberg,16
-BUDAPEST,05,Budapest VII. kerület,Oslo,16
+BUDAPEST,05,Budapest VII. kerület,Osló,16
 BUDAPEST,05,Budapest VII. kerület,Ottawa,3
 BUDAPEST,05,Budapest VII. kerület,Párizs,60
 BUDAPEST,05,Budapest VII. kerület,Peking,2
@@ -576,7 +576,7 @@ BUDAPEST,06,Budapest VIII. kerület,Brüsszel,50
 BUDAPEST,06,Budapest VIII. kerület,Buenos Aires,1
 BUDAPEST,06,Budapest VIII. kerület,Bukarest,3
 BUDAPEST,06,Budapest VIII. kerület,Chicago,8
-BUDAPEST,06,Budapest VIII. kerület,Chisinau,1
+BUDAPEST,06,Budapest VIII. kerület,Kisinyov,1
 BUDAPEST,06,Budapest VIII. kerület,Csíkszereda,73
 BUDAPEST,06,Budapest VIII. kerület,Doha,2
 BUDAPEST,06,Budapest VIII. kerület,Dublin,29
@@ -589,14 +589,14 @@ BUDAPEST,06,Budapest VIII. kerület,Hága,69
 BUDAPEST,06,Budapest VIII. kerület,Hanoi,2
 BUDAPEST,06,Budapest VIII. kerület,Havanna,2
 BUDAPEST,06,Budapest VIII. kerület,Helsinki,4
-BUDAPEST,06,Budapest VIII. kerület,Ho Si Minh-város,1
+BUDAPEST,06,Budapest VIII. kerület,Ho Chi Minh Város,1
 BUDAPEST,06,Budapest VIII. kerület,Hongkong,3
 BUDAPEST,06,Budapest VIII. kerület,Houston,4
 BUDAPEST,06,Budapest VIII. kerület,Innsbruck,11
 BUDAPEST,06,Budapest VIII. kerület,Isztambul,1
 BUDAPEST,06,Budapest VIII. kerület,Jakarta,2
 BUDAPEST,06,Budapest VIII. kerület,Kairó,4
-BUDAPEST,06,Budapest VIII. kerület,Kazan,1
+BUDAPEST,06,Budapest VIII. kerület,Kazány,1
 BUDAPEST,06,Budapest VIII. kerület,Kolozsvár,22
 BUDAPEST,06,Budapest VIII. kerület,Koppenhága,45
 BUDAPEST,06,Budapest VIII. kerület,Kuala Lumpur,3
@@ -622,9 +622,9 @@ BUDAPEST,06,Budapest VIII. kerület,München,54
 BUDAPEST,06,Budapest VIII. kerület,Nairobi,1
 BUDAPEST,06,Budapest VIII. kerület,New York,30
 BUDAPEST,06,Budapest VIII. kerület,Nicosia,2
-BUDAPEST,06,Budapest VIII. kerület,Nur-Szultán,1
+BUDAPEST,06,Budapest VIII. kerület,Asztana,1
 BUDAPEST,06,Budapest VIII. kerület,Nürnberg,12
-BUDAPEST,06,Budapest VIII. kerület,Oslo,14
+BUDAPEST,06,Budapest VIII. kerület,Osló,14
 BUDAPEST,06,Budapest VIII. kerület,Párizs,28
 BUDAPEST,06,Budapest VIII. kerület,Podgorica,1
 BUDAPEST,06,Budapest VIII. kerület,Pozsony,1
@@ -707,7 +707,7 @@ BUDAPEST,07,Budapest XIII. kerület,London,193
 BUDAPEST,07,Budapest XIII. kerület,Los Angeles,16
 BUDAPEST,07,Budapest XIII. kerület,Luanda,1
 BUDAPEST,07,Budapest XIII. kerület,Luxembourg,24
-BUDAPEST,07,Budapest XIII. kerület,Lviv,1
+BUDAPEST,07,Budapest XIII. kerület,Kijev,1
 BUDAPEST,07,Budapest XIII. kerület,Lyon,8
 BUDAPEST,07,Budapest XIII. kerület,Madrid,23
 BUDAPEST,07,Budapest XIII. kerület,Malaga,26
@@ -723,7 +723,7 @@ BUDAPEST,07,Budapest XIII. kerület,München,75
 BUDAPEST,07,Budapest XIII. kerület,New York,41
 BUDAPEST,07,Budapest XIII. kerület,Nicosia,6
 BUDAPEST,07,Budapest XIII. kerület,Nürnberg,22
-BUDAPEST,07,Budapest XIII. kerület,Oslo,15
+BUDAPEST,07,Budapest XIII. kerület,Osló,15
 BUDAPEST,07,Budapest XIII. kerület,Ottawa,2
 BUDAPEST,07,Budapest XIII. kerület,Panamaváros,1
 BUDAPEST,07,Budapest XIII. kerület,Párizs,41
@@ -785,7 +785,7 @@ BUDAPEST,08,Budapest XIV. kerület,Buenos Aires,1
 BUDAPEST,08,Budapest XIV. kerület,Bukarest,3
 BUDAPEST,08,Budapest XIV. kerület,Canberra,2
 BUDAPEST,08,Budapest XIV. kerület,Chicago,9
-BUDAPEST,08,Budapest XIV. kerület,Chisinau,1
+BUDAPEST,08,Budapest XIV. kerület,Kisinyov,1
 BUDAPEST,08,Budapest XIV. kerület,Csíkszereda,71
 BUDAPEST,08,Budapest XIV. kerület,Csungking,2
 BUDAPEST,08,Budapest XIV. kerület,Doha,1
@@ -805,7 +805,7 @@ BUDAPEST,08,Budapest XIV. kerület,Isztambul,6
 BUDAPEST,08,Budapest XIV. kerület,Jakarta,4
 BUDAPEST,08,Budapest XIV. kerület,Jekatyerinburg,2
 BUDAPEST,08,Budapest XIV. kerület,Kairó,1
-BUDAPEST,08,Budapest XIV. kerület,Kazan,1
+BUDAPEST,08,Budapest XIV. kerület,Kazány,1
 BUDAPEST,08,Budapest XIV. kerület,Kolozsvár,19
 BUDAPEST,08,Budapest XIV. kerület,Koppenhága,33
 BUDAPEST,08,Budapest XIV. kerület,Krakkó,2
@@ -831,7 +831,7 @@ BUDAPEST,08,Budapest XIV. kerület,Nairobi,2
 BUDAPEST,08,Budapest XIV. kerület,New York,25
 BUDAPEST,08,Budapest XIV. kerület,Nicosia,8
 BUDAPEST,08,Budapest XIV. kerület,Nürnberg,25
-BUDAPEST,08,Budapest XIV. kerület,Oslo,7
+BUDAPEST,08,Budapest XIV. kerület,Osló,7
 BUDAPEST,08,Budapest XIV. kerület,Ottawa,3
 BUDAPEST,08,Budapest XIV. kerület,Párizs,38
 BUDAPEST,08,Budapest XIV. kerület,Peking,3
@@ -897,7 +897,7 @@ BUDAPEST,09,Budapest X. kerület,Genf,5
 BUDAPEST,09,Budapest X. kerület,Hága,39
 BUDAPEST,09,Budapest X. kerület,Havanna,2
 BUDAPEST,09,Budapest X. kerület,Helsinki,7
-BUDAPEST,09,Budapest X. kerület,Ho Si Minh-város,1
+BUDAPEST,09,Budapest X. kerület,Ho Chi Minh Város,1
 BUDAPEST,09,Budapest X. kerület,Houston,1
 BUDAPEST,09,Budapest X. kerület,Innsbruck,7
 BUDAPEST,09,Budapest X. kerület,Isztambul,2
@@ -923,7 +923,7 @@ BUDAPEST,09,Budapest X. kerület,Nairobi,1
 BUDAPEST,09,Budapest X. kerület,New York,15
 BUDAPEST,09,Budapest X. kerület,Nicosia,2
 BUDAPEST,09,Budapest X. kerület,Nürnberg,20
-BUDAPEST,09,Budapest X. kerület,Oslo,10
+BUDAPEST,09,Budapest X. kerület,Osló,10
 BUDAPEST,09,Budapest X. kerület,Ottawa,1
 BUDAPEST,09,Budapest X. kerület,Párizs,20
 BUDAPEST,09,Budapest X. kerület,Peking,2
@@ -976,7 +976,7 @@ BUDAPEST,10,Budapest III. kerület,Genf,8
 BUDAPEST,10,Budapest III. kerület,Hága,74
 BUDAPEST,10,Budapest III. kerület,Havanna,1
 BUDAPEST,10,Budapest III. kerület,Helsinki,11
-BUDAPEST,10,Budapest III. kerület,Ho Si Minh-város,2
+BUDAPEST,10,Budapest III. kerület,Ho Chi Minh Város,2
 BUDAPEST,10,Budapest III. kerület,Houston,3
 BUDAPEST,10,Budapest III. kerület,Innsbruck,7
 BUDAPEST,10,Budapest III. kerület,Isztambul,2
@@ -1007,7 +1007,7 @@ BUDAPEST,10,Budapest III. kerület,Nairobi,1
 BUDAPEST,10,Budapest III. kerület,New York,13
 BUDAPEST,10,Budapest III. kerület,Nicosia,2
 BUDAPEST,10,Budapest III. kerület,Nürnberg,30
-BUDAPEST,10,Budapest III. kerület,Oslo,11
+BUDAPEST,10,Budapest III. kerület,Osló,11
 BUDAPEST,10,Budapest III. kerület,Párizs,29
 BUDAPEST,10,Budapest III. kerület,Peking,2
 BUDAPEST,10,Budapest III. kerület,Podgorica,4
@@ -1070,7 +1070,7 @@ BUDAPEST,11,Budapest IV. kerület,Hága,55
 BUDAPEST,11,Budapest IV. kerület,Hanoi,1
 BUDAPEST,11,Budapest IV. kerület,Havanna,2
 BUDAPEST,11,Budapest IV. kerület,Helsinki,2
-BUDAPEST,11,Budapest IV. kerület,Ho Si Minh-város,1
+BUDAPEST,11,Budapest IV. kerület,Ho Chi Minh Város,1
 BUDAPEST,11,Budapest IV. kerület,Houston,6
 BUDAPEST,11,Budapest IV. kerület,Innsbruck,10
 BUDAPEST,11,Budapest IV. kerület,Isztambul,3
@@ -1100,7 +1100,7 @@ BUDAPEST,11,Budapest IV. kerület,Nairobi,1
 BUDAPEST,11,Budapest IV. kerület,New York,10
 BUDAPEST,11,Budapest IV. kerület,Nicosia,3
 BUDAPEST,11,Budapest IV. kerület,Nürnberg,23
-BUDAPEST,11,Budapest IV. kerület,Oslo,11
+BUDAPEST,11,Budapest IV. kerület,Osló,11
 BUDAPEST,11,Budapest IV. kerület,Ottawa,4
 BUDAPEST,11,Budapest IV. kerület,Párizs,25
 BUDAPEST,11,Budapest IV. kerület,Peking,3
@@ -1151,7 +1151,7 @@ BUDAPEST,12,Budapest XV. kerület,Bern,19
 BUDAPEST,12,Budapest XV. kerület,Brüsszel,14
 BUDAPEST,12,Budapest XV. kerület,Bukarest,5
 BUDAPEST,12,Budapest XV. kerület,Chicago,4
-BUDAPEST,12,Budapest XV. kerület,Chisinau,1
+BUDAPEST,12,Budapest XV. kerület,Kisinyov,1
 BUDAPEST,12,Budapest XV. kerület,Csíkszereda,32
 BUDAPEST,12,Budapest XV. kerület,Dakar,2
 BUDAPEST,12,Budapest XV. kerület,Doha,1
@@ -1189,7 +1189,7 @@ BUDAPEST,12,Budapest XV. kerület,Nairobi,1
 BUDAPEST,12,Budapest XV. kerület,New York,7
 BUDAPEST,12,Budapest XV. kerület,Nicosia,8
 BUDAPEST,12,Budapest XV. kerület,Nürnberg,12
-BUDAPEST,12,Budapest XV. kerület,Oslo,8
+BUDAPEST,12,Budapest XV. kerület,Osló,8
 BUDAPEST,12,Budapest XV. kerület,Párizs,8
 BUDAPEST,12,Budapest XV. kerület,Pozsony,3
 BUDAPEST,12,Budapest XV. kerület,Prága,8
@@ -1245,7 +1245,7 @@ BUDAPEST,13,Budapest XVI. kerület,Gdansk,2
 BUDAPEST,13,Budapest XVI. kerület,Genf,8
 BUDAPEST,13,Budapest XVI. kerület,Hága,51
 BUDAPEST,13,Budapest XVI. kerület,Helsinki,23
-BUDAPEST,13,Budapest XVI. kerület,Ho Si Minh-város,2
+BUDAPEST,13,Budapest XVI. kerület,Ho Chi Minh Város,2
 BUDAPEST,13,Budapest XVI. kerület,Innsbruck,6
 BUDAPEST,13,Budapest XVI. kerület,Isztambul,2
 BUDAPEST,13,Budapest XVI. kerület,Kolozsvár,7
@@ -1273,9 +1273,9 @@ BUDAPEST,13,Budapest XVI. kerület,München,59
 BUDAPEST,13,Budapest XVI. kerület,Nairobi,2
 BUDAPEST,13,Budapest XVI. kerület,New York,19
 BUDAPEST,13,Budapest XVI. kerület,Nicosia,3
-BUDAPEST,13,Budapest XVI. kerület,Nur-Szultán,1
+BUDAPEST,13,Budapest XVI. kerület,Asztana,1
 BUDAPEST,13,Budapest XVI. kerület,Nürnberg,18
-BUDAPEST,13,Budapest XVI. kerület,Oslo,5
+BUDAPEST,13,Budapest XVI. kerület,Osló,5
 BUDAPEST,13,Budapest XVI. kerület,Panamaváros,3
 BUDAPEST,13,Budapest XVI. kerület,Párizs,38
 BUDAPEST,13,Budapest XVI. kerület,Peking,1
@@ -1321,7 +1321,7 @@ BUDAPEST,14,Budapest XVII. kerület,Brüsszel,25
 BUDAPEST,14,Budapest XVII. kerület,Buenos Aires,1
 BUDAPEST,14,Budapest XVII. kerület,Bukarest,1
 BUDAPEST,14,Budapest XVII. kerület,Chicago,1
-BUDAPEST,14,Budapest XVII. kerület,Chisinau,3
+BUDAPEST,14,Budapest XVII. kerület,Kisinyov,3
 BUDAPEST,14,Budapest XVII. kerület,Csíkszereda,31
 BUDAPEST,14,Budapest XVII. kerület,Csungking,1
 BUDAPEST,14,Budapest XVII. kerület,Dublin,18
@@ -1357,7 +1357,7 @@ BUDAPEST,14,Budapest XVII. kerület,München,34
 BUDAPEST,14,Budapest XVII. kerület,New York,11
 BUDAPEST,14,Budapest XVII. kerület,Nicosia,2
 BUDAPEST,14,Budapest XVII. kerület,Nürnberg,17
-BUDAPEST,14,Budapest XVII. kerület,Oslo,10
+BUDAPEST,14,Budapest XVII. kerület,Osló,10
 BUDAPEST,14,Budapest XVII. kerület,Ottawa,2
 BUDAPEST,14,Budapest XVII. kerület,Párizs,20
 BUDAPEST,14,Budapest XVII. kerület,Peking,1
@@ -1432,7 +1432,7 @@ BUDAPEST,15,Budapest XVIII. kerület,Ljubljana,1
 BUDAPEST,15,Budapest XVIII. kerület,London,93
 BUDAPEST,15,Budapest XVIII. kerület,Los Angeles,6
 BUDAPEST,15,Budapest XVIII. kerület,Luxembourg,9
-BUDAPEST,15,Budapest XVIII. kerület,Lviv,1
+BUDAPEST,15,Budapest XVIII. kerület,Kijev,1
 BUDAPEST,15,Budapest XVIII. kerület,Lyon,2
 BUDAPEST,15,Budapest XVIII. kerület,Madrid,8
 BUDAPEST,15,Budapest XVIII. kerület,Malaga,12
@@ -1449,7 +1449,7 @@ BUDAPEST,15,Budapest XVIII. kerület,Nairobi,1
 BUDAPEST,15,Budapest XVIII. kerület,New York,15
 BUDAPEST,15,Budapest XVIII. kerület,Nicosia,1
 BUDAPEST,15,Budapest XVIII. kerület,Nürnberg,8
-BUDAPEST,15,Budapest XVIII. kerület,Oslo,7
+BUDAPEST,15,Budapest XVIII. kerület,Osló,7
 BUDAPEST,15,Budapest XVIII. kerület,Ottawa,2
 BUDAPEST,15,Budapest XVIII. kerület,Párizs,14
 BUDAPEST,15,Budapest XVIII. kerület,Peking,1
@@ -1508,7 +1508,7 @@ BUDAPEST,16,Budapest XX. kerület,Genf,9
 BUDAPEST,16,Budapest XX. kerület,Hága,44
 BUDAPEST,16,Budapest XX. kerület,Hanoi,1
 BUDAPEST,16,Budapest XX. kerület,Helsinki,13
-BUDAPEST,16,Budapest XX. kerület,Ho Si Minh-város,1
+BUDAPEST,16,Budapest XX. kerület,Ho Chi Minh Város,1
 BUDAPEST,16,Budapest XX. kerület,Houston,1
 BUDAPEST,16,Budapest XX. kerület,Innsbruck,3
 BUDAPEST,16,Budapest XX. kerület,Isztambul,3
@@ -1537,7 +1537,7 @@ BUDAPEST,16,Budapest XX. kerület,Montreal,4
 BUDAPEST,16,Budapest XX. kerület,München,42
 BUDAPEST,16,Budapest XX. kerület,New York,17
 BUDAPEST,16,Budapest XX. kerület,Nürnberg,19
-BUDAPEST,16,Budapest XX. kerület,Oslo,11
+BUDAPEST,16,Budapest XX. kerület,Osló,11
 BUDAPEST,16,Budapest XX. kerület,Panamaváros,2
 BUDAPEST,16,Budapest XX. kerület,Párizs,12
 BUDAPEST,16,Budapest XX. kerület,Phnom Penh,1
@@ -1585,7 +1585,7 @@ BUDAPEST,17,Budapest XXI. kerület,Helsinki,6
 BUDAPEST,17,Budapest XXI. kerület,Houston,2
 BUDAPEST,17,Budapest XXI. kerület,Innsbruck,2
 BUDAPEST,17,Budapest XXI. kerület,Isztambul,2
-BUDAPEST,17,Budapest XXI. kerület,Kazan,2
+BUDAPEST,17,Budapest XXI. kerület,Kazány,2
 BUDAPEST,17,Budapest XXI. kerület,Kolozsvár,10
 BUDAPEST,17,Budapest XXI. kerület,Koppenhága,33
 BUDAPEST,17,Budapest XXI. kerület,Krakkó,4
@@ -1608,7 +1608,7 @@ BUDAPEST,17,Budapest XXI. kerület,München,44
 BUDAPEST,17,Budapest XXI. kerület,New York,9
 BUDAPEST,17,Budapest XXI. kerület,Nicosia,2
 BUDAPEST,17,Budapest XXI. kerület,Nürnberg,9
-BUDAPEST,17,Budapest XXI. kerület,Oslo,6
+BUDAPEST,17,Budapest XXI. kerület,Osló,6
 BUDAPEST,17,Budapest XXI. kerület,Ottawa,1
 BUDAPEST,17,Budapest XXI. kerület,Panamaváros,1
 BUDAPEST,17,Budapest XXI. kerület,Párizs,26
@@ -1665,7 +1665,7 @@ BUDAPEST,18,Budapest XXII. kerület,Hága,76
 BUDAPEST,18,Budapest XXII. kerület,Hanoi,2
 BUDAPEST,18,Budapest XXII. kerület,Havanna,1
 BUDAPEST,18,Budapest XXII. kerület,Helsinki,11
-BUDAPEST,18,Budapest XXII. kerület,Ho Si Minh-város,2
+BUDAPEST,18,Budapest XXII. kerület,Ho Chi Minh Város,2
 BUDAPEST,18,Budapest XXII. kerület,Hongkong,2
 BUDAPEST,18,Budapest XXII. kerület,Houston,3
 BUDAPEST,18,Budapest XXII. kerület,Innsbruck,8
@@ -1699,7 +1699,7 @@ BUDAPEST,18,Budapest XXII. kerület,München,44
 BUDAPEST,18,Budapest XXII. kerület,New York,15
 BUDAPEST,18,Budapest XXII. kerület,Nicosia,3
 BUDAPEST,18,Budapest XXII. kerület,Nürnberg,20
-BUDAPEST,18,Budapest XXII. kerület,Oslo,15
+BUDAPEST,18,Budapest XXII. kerület,Osló,15
 BUDAPEST,18,Budapest XXII. kerület,Ottawa,5
 BUDAPEST,18,Budapest XXII. kerület,Párizs,33
 BUDAPEST,18,Budapest XXII. kerület,Podgorica,2
@@ -1785,7 +1785,7 @@ BARANYA,01,Pécs,München,83
 BARANYA,01,Pécs,New York,5
 BARANYA,01,Pécs,Nicosia,3
 BARANYA,01,Pécs,Nürnberg,24
-BARANYA,01,Pécs,Oslo,12
+BARANYA,01,Pécs,Osló,12
 BARANYA,01,Pécs,Párizs,24
 BARANYA,01,Pécs,Peking,2
 BARANYA,01,Pécs,Pozsony,3
@@ -1831,7 +1831,7 @@ BARANYA,02,Pécs,Edinburgh,18
 BARANYA,02,Pécs,Genf,5
 BARANYA,02,Pécs,Hága,32
 BARANYA,02,Pécs,Helsinki,5
-BARANYA,02,Pécs,Ho Si Minh-város,1
+BARANYA,02,Pécs,Ho Chi Minh Város,1
 BARANYA,02,Pécs,Hongkong,1
 BARANYA,02,Pécs,Innsbruck,22
 BARANYA,02,Pécs,Kolozsvár,2
@@ -1855,7 +1855,7 @@ BARANYA,02,Pécs,München,82
 BARANYA,02,Pécs,New York,13
 BARANYA,02,Pécs,Nicosia,2
 BARANYA,02,Pécs,Nürnberg,19
-BARANYA,02,Pécs,Oslo,4
+BARANYA,02,Pécs,Osló,4
 BARANYA,02,Pécs,Ottawa,1
 BARANYA,02,Pécs,Párizs,4
 BARANYA,02,Pécs,Peking,1
@@ -1920,7 +1920,7 @@ BARANYA,03,Mohács,Manchester,10
 BARANYA,03,Mohács,Milánó,2
 BARANYA,03,Mohács,München,70
 BARANYA,03,Mohács,Nürnberg,20
-BARANYA,03,Mohács,Oslo,2
+BARANYA,03,Mohács,Osló,2
 BARANYA,03,Mohács,Párizs,4
 BARANYA,03,Mohács,Prága,3
 BARANYA,03,Mohács,Pretoria,2
@@ -1967,7 +1967,7 @@ BARANYA,04,Szigetvár,Milánó,1
 BARANYA,04,Szigetvár,München,49
 BARANYA,04,Szigetvár,New York,3
 BARANYA,04,Szigetvár,Nürnberg,17
-BARANYA,04,Szigetvár,Oslo,4
+BARANYA,04,Szigetvár,Osló,4
 BARANYA,04,Szigetvár,Párizs,4
 BARANYA,04,Szigetvár,Prága,3
 BARANYA,04,Szigetvár,Pristina,2
@@ -2062,7 +2062,7 @@ BÁCS-KISKUN,02,Kecskemét,Innsbruck,6
 BÁCS-KISKUN,02,Kecskemét,Isztambul,2
 BÁCS-KISKUN,02,Kecskemét,Jakarta,2
 BÁCS-KISKUN,02,Kecskemét,Kairó,2
-BÁCS-KISKUN,02,Kecskemét,Kazan,2
+BÁCS-KISKUN,02,Kecskemét,Kazány,2
 BÁCS-KISKUN,02,Kecskemét,Kolozsvár,11
 BÁCS-KISKUN,02,Kecskemét,Koppenhága,16
 BÁCS-KISKUN,02,Kecskemét,Krakkó,3
@@ -2083,7 +2083,7 @@ BÁCS-KISKUN,02,Kecskemét,München,35
 BÁCS-KISKUN,02,Kecskemét,New York,13
 BÁCS-KISKUN,02,Kecskemét,Nicosia,2
 BÁCS-KISKUN,02,Kecskemét,Nürnberg,9
-BÁCS-KISKUN,02,Kecskemét,Oslo,6
+BÁCS-KISKUN,02,Kecskemét,Osló,6
 BÁCS-KISKUN,02,Kecskemét,Párizs,11
 BÁCS-KISKUN,02,Kecskemét,Prága,7
 BÁCS-KISKUN,02,Kecskemét,Pretoria,1
@@ -2123,7 +2123,7 @@ BÁCS-KISKUN,03,Kalocsa,Edinburgh,7
 BÁCS-KISKUN,03,Kalocsa,Hága,18
 BÁCS-KISKUN,03,Kalocsa,Hanoi,1
 BÁCS-KISKUN,03,Kalocsa,Helsinki,1
-BÁCS-KISKUN,03,Kalocsa,Ho Si Minh-város,1
+BÁCS-KISKUN,03,Kalocsa,Ho Chi Minh Város,1
 BÁCS-KISKUN,03,Kalocsa,Houston,1
 BÁCS-KISKUN,03,Kalocsa,Innsbruck,7
 BÁCS-KISKUN,03,Kalocsa,Kolozsvár,1
@@ -2144,7 +2144,7 @@ BÁCS-KISKUN,03,Kalocsa,München,45
 BÁCS-KISKUN,03,Kalocsa,New York,4
 BÁCS-KISKUN,03,Kalocsa,Nicosia,1
 BÁCS-KISKUN,03,Kalocsa,Nürnberg,18
-BÁCS-KISKUN,03,Kalocsa,Oslo,6
+BÁCS-KISKUN,03,Kalocsa,Osló,6
 BÁCS-KISKUN,03,Kalocsa,Párizs,7
 BÁCS-KISKUN,03,Kalocsa,Prága,2
 BÁCS-KISKUN,03,Kalocsa,Pristina,1
@@ -2197,7 +2197,7 @@ BÁCS-KISKUN,04,Kiskunfélegyháza,München,31
 BÁCS-KISKUN,04,Kiskunfélegyháza,New York,1
 BÁCS-KISKUN,04,Kiskunfélegyháza,Nicosia,3
 BÁCS-KISKUN,04,Kiskunfélegyháza,Nürnberg,11
-BÁCS-KISKUN,04,Kiskunfélegyháza,Oslo,3
+BÁCS-KISKUN,04,Kiskunfélegyháza,Osló,3
 BÁCS-KISKUN,04,Kiskunfélegyháza,Párizs,4
 BÁCS-KISKUN,04,Kiskunfélegyháza,Prága,1
 BÁCS-KISKUN,04,Kiskunfélegyháza,Pristina,3
@@ -2249,7 +2249,7 @@ BÁCS-KISKUN,05,Kiskunhalas,Milánó,3
 BÁCS-KISKUN,05,Kiskunhalas,München,62
 BÁCS-KISKUN,05,Kiskunhalas,New York,4
 BÁCS-KISKUN,05,Kiskunhalas,Nürnberg,14
-BÁCS-KISKUN,05,Kiskunhalas,Oslo,3
+BÁCS-KISKUN,05,Kiskunhalas,Osló,3
 BÁCS-KISKUN,05,Kiskunhalas,Párizs,1
 BÁCS-KISKUN,05,Kiskunhalas,Pozsony,1
 BÁCS-KISKUN,05,Kiskunhalas,Pristina,5
@@ -2300,7 +2300,7 @@ BÁCS-KISKUN,06,Baja,Montreal,1
 BÁCS-KISKUN,06,Baja,München,69
 BÁCS-KISKUN,06,Baja,New York,7
 BÁCS-KISKUN,06,Baja,Nürnberg,4
-BÁCS-KISKUN,06,Baja,Oslo,2
+BÁCS-KISKUN,06,Baja,Osló,2
 BÁCS-KISKUN,06,Baja,Párizs,7
 BÁCS-KISKUN,06,Baja,Prága,1
 BÁCS-KISKUN,06,Baja,Pretoria,1
@@ -2360,7 +2360,7 @@ BÉKÉS,01,Békéscsaba,München,35
 BÉKÉS,01,Békéscsaba,New York,4
 BÉKÉS,01,Békéscsaba,Nicosia,5
 BÉKÉS,01,Békéscsaba,Nürnberg,15
-BÉKÉS,01,Békéscsaba,Oslo,8
+BÉKÉS,01,Békéscsaba,Osló,8
 BÉKÉS,01,Békéscsaba,Párizs,4
 BÉKÉS,01,Békéscsaba,Podgorica,1
 BÉKÉS,01,Békéscsaba,Pozsony,2
@@ -2465,7 +2465,7 @@ BÉKÉS,03,Gyula,Milánó,3
 BÉKÉS,03,Gyula,München,37
 BÉKÉS,03,Gyula,New York,3
 BÉKÉS,03,Gyula,Nürnberg,6
-BÉKÉS,03,Gyula,Oslo,3
+BÉKÉS,03,Gyula,Osló,3
 BÉKÉS,03,Gyula,Párizs,1
 BÉKÉS,03,Gyula,Podgorica,1
 BÉKÉS,03,Gyula,Prága,2
@@ -2526,7 +2526,7 @@ BÉKÉS,04,Orosháza,München,35
 BÉKÉS,04,Orosháza,New York,1
 BÉKÉS,04,Orosháza,Nicosia,3
 BÉKÉS,04,Orosháza,Nürnberg,13
-BÉKÉS,04,Orosháza,Oslo,1
+BÉKÉS,04,Orosháza,Osló,1
 BÉKÉS,04,Orosháza,Panamaváros,2
 BÉKÉS,04,Orosháza,Párizs,2
 BÉKÉS,04,Orosháza,Pristina,17
@@ -2596,7 +2596,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,München,63
 BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,New York,7
 BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Nicosia,4
 BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Nürnberg,19
-BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Oslo,5
+BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Osló,5
 BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Párizs,9
 BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Pozsony,1
 BORSOD-ABAÚJ-ZEMPLÉN,01,Miskolc,Prága,5
@@ -2656,7 +2656,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,München,69
 BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,New York,4
 BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Nicosia,1
 BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Nürnberg,18
-BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Oslo,2
+BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Osló,2
 BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Ottawa,2
 BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Panamaváros,1
 BORSOD-ABAÚJ-ZEMPLÉN,02,Miskolc,Párizs,13
@@ -2716,7 +2716,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,München,37
 BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,New York,4
 BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Nicosia,1
 BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Nürnberg,17
-BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Oslo,2
+BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Osló,2
 BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Párizs,4
 BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Prága,1
 BORSOD-ABAÚJ-ZEMPLÉN,03,Ózd,Róma,1
@@ -2755,7 +2755,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Miami,2
 BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,München,23
 BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,New York,2
 BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Nürnberg,10
-BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Oslo,4
+BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Osló,4
 BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Ottawa,1
 BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Párizs,1
 BORSOD-ABAÚJ-ZEMPLÉN,04,Kazincbarcika,Prága,1
@@ -2809,7 +2809,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Minszk,2
 BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,München,15
 BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,New York,7
 BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Nürnberg,14
-BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Oslo,3
+BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Osló,3
 BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Párizs,1
 BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Prága,4
 BORSOD-ABAÚJ-ZEMPLÉN,05,Sátoraljaújhely,Pretoria,1
@@ -2866,7 +2866,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Milánó,1
 BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,München,33
 BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,New York,6
 BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Nürnberg,18
-BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Oslo,2
+BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Osló,2
 BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Párizs,6
 BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Prága,2
 BORSOD-ABAÚJ-ZEMPLÉN,06,Tiszaújváros,Quito,1
@@ -2918,7 +2918,7 @@ BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Milánó,4
 BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,München,41
 BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,New York,7
 BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Nürnberg,14
-BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Oslo,3
+BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Osló,3
 BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Panamaváros,1
 BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Párizs,5
 BORSOD-ABAÚJ-ZEMPLÉN,07,Mezőkövesd,Pozsony,1
@@ -2971,7 +2971,7 @@ CSONGRÁD-CSANÁD,01,Szeged,Ljubljana,5
 CSONGRÁD-CSANÁD,01,Szeged,London,180
 CSONGRÁD-CSANÁD,01,Szeged,Los Angeles,4
 CSONGRÁD-CSANÁD,01,Szeged,Luxembourg,14
-CSONGRÁD-CSANÁD,01,Szeged,Lviv,1
+CSONGRÁD-CSANÁD,01,Szeged,Kijev,1
 CSONGRÁD-CSANÁD,01,Szeged,Lyon,7
 CSONGRÁD-CSANÁD,01,Szeged,Madrid,6
 CSONGRÁD-CSANÁD,01,Szeged,Malaga,8
@@ -2984,7 +2984,7 @@ CSONGRÁD-CSANÁD,01,Szeged,München,60
 CSONGRÁD-CSANÁD,01,Szeged,New York,16
 CSONGRÁD-CSANÁD,01,Szeged,Nicosia,1
 CSONGRÁD-CSANÁD,01,Szeged,Nürnberg,14
-CSONGRÁD-CSANÁD,01,Szeged,Oslo,8
+CSONGRÁD-CSANÁD,01,Szeged,Osló,8
 CSONGRÁD-CSANÁD,01,Szeged,Párizs,15
 CSONGRÁD-CSANÁD,01,Szeged,Pozsony,1
 CSONGRÁD-CSANÁD,01,Szeged,Prága,12
@@ -3049,7 +3049,7 @@ CSONGRÁD-CSANÁD,02,Szeged,Ljubljana,9
 CSONGRÁD-CSANÁD,02,Szeged,London,152
 CSONGRÁD-CSANÁD,02,Szeged,Los Angeles,8
 CSONGRÁD-CSANÁD,02,Szeged,Luxembourg,12
-CSONGRÁD-CSANÁD,02,Szeged,Lviv,1
+CSONGRÁD-CSANÁD,02,Szeged,Kijev,1
 CSONGRÁD-CSANÁD,02,Szeged,Lyon,6
 CSONGRÁD-CSANÁD,02,Szeged,Madrid,6
 CSONGRÁD-CSANÁD,02,Szeged,Malaga,3
@@ -3065,7 +3065,7 @@ CSONGRÁD-CSANÁD,02,Szeged,München,59
 CSONGRÁD-CSANÁD,02,Szeged,New York,19
 CSONGRÁD-CSANÁD,02,Szeged,Nicosia,1
 CSONGRÁD-CSANÁD,02,Szeged,Nürnberg,20
-CSONGRÁD-CSANÁD,02,Szeged,Oslo,9
+CSONGRÁD-CSANÁD,02,Szeged,Osló,9
 CSONGRÁD-CSANÁD,02,Szeged,Ottawa,1
 CSONGRÁD-CSANÁD,02,Szeged,Párizs,10
 CSONGRÁD-CSANÁD,02,Szeged,Podgorica,1
@@ -3129,7 +3129,7 @@ CSONGRÁD-CSANÁD,03,Szentes,München,30
 CSONGRÁD-CSANÁD,03,Szentes,New York,2
 CSONGRÁD-CSANÁD,03,Szentes,Nicosia,1
 CSONGRÁD-CSANÁD,03,Szentes,Nürnberg,13
-CSONGRÁD-CSANÁD,03,Szentes,Oslo,5
+CSONGRÁD-CSANÁD,03,Szentes,Osló,5
 CSONGRÁD-CSANÁD,03,Szentes,Párizs,7
 CSONGRÁD-CSANÁD,03,Szentes,Podgorica,1
 CSONGRÁD-CSANÁD,03,Szentes,Pozsony,1
@@ -3175,7 +3175,7 @@ CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Kolozsvár,5
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Koppenhága,14
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,London,71
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Luxembourg,6
-CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Lviv,1
+CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Kijev,1
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Lyon,2
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Madrid,4
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Malaga,1
@@ -3186,7 +3186,7 @@ CSONGRÁD-CSANÁD,04,Hódmezővásárhely,München,32
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,New York,3
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Nicosia,3
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Nürnberg,21
-CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Oslo,2
+CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Osló,2
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Párizs,5
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Pozsony,4
 CSONGRÁD-CSANÁD,04,Hódmezővásárhely,Prága,3
@@ -3228,13 +3228,13 @@ FEJÉR,01,Székesfehérvár,Gdansk,4
 FEJÉR,01,Székesfehérvár,Genf,8
 FEJÉR,01,Székesfehérvár,Hága,32
 FEJÉR,01,Székesfehérvár,Helsinki,7
-FEJÉR,01,Székesfehérvár,Ho Si Minh-város,1
+FEJÉR,01,Székesfehérvár,Ho Chi Minh Város,1
 FEJÉR,01,Székesfehérvár,Houston,1
 FEJÉR,01,Székesfehérvár,Innsbruck,6
 FEJÉR,01,Székesfehérvár,Isztambul,5
 FEJÉR,01,Székesfehérvár,Jakarta,2
 FEJÉR,01,Székesfehérvár,Kampala,1
-FEJÉR,01,Székesfehérvár,Kazan,1
+FEJÉR,01,Székesfehérvár,Kazány,1
 FEJÉR,01,Székesfehérvár,Kolozsvár,2
 FEJÉR,01,Székesfehérvár,Koppenhága,18
 FEJÉR,01,Székesfehérvár,Krakkó,2
@@ -3259,7 +3259,7 @@ FEJÉR,01,Székesfehérvár,Nairobi,2
 FEJÉR,01,Székesfehérvár,New York,9
 FEJÉR,01,Székesfehérvár,Nicosia,1
 FEJÉR,01,Székesfehérvár,Nürnberg,21
-FEJÉR,01,Székesfehérvár,Oslo,5
+FEJÉR,01,Székesfehérvár,Osló,5
 FEJÉR,01,Székesfehérvár,Ottawa,1
 FEJÉR,01,Székesfehérvár,Párizs,7
 FEJÉR,01,Székesfehérvár,Prága,2
@@ -3297,7 +3297,7 @@ FEJÉR,02,Székesfehérvár,Bern,22
 FEJÉR,02,Székesfehérvár,Brüsszel,12
 FEJÉR,02,Székesfehérvár,Bukarest,2
 FEJÉR,02,Székesfehérvár,Chicago,3
-FEJÉR,02,Székesfehérvár,Chisinau,1
+FEJÉR,02,Székesfehérvár,Kisinyov,1
 FEJÉR,02,Székesfehérvár,Csíkszereda,13
 FEJÉR,02,Székesfehérvár,Dublin,7
 FEJÉR,02,Székesfehérvár,Düsseldorf,9
@@ -3326,7 +3326,7 @@ FEJÉR,02,Székesfehérvár,Milánó,4
 FEJÉR,02,Székesfehérvár,München,44
 FEJÉR,02,Székesfehérvár,New York,9
 FEJÉR,02,Székesfehérvár,Nürnberg,19
-FEJÉR,02,Székesfehérvár,Oslo,1
+FEJÉR,02,Székesfehérvár,Osló,1
 FEJÉR,02,Székesfehérvár,Panamaváros,2
 FEJÉR,02,Székesfehérvár,Párizs,4
 FEJÉR,02,Székesfehérvár,Peking,1
@@ -3373,7 +3373,7 @@ FEJÉR,03,Bicske,Genf,3
 FEJÉR,03,Bicske,Hága,34
 FEJÉR,03,Bicske,Havanna,1
 FEJÉR,03,Bicske,Helsinki,11
-FEJÉR,03,Bicske,Ho Si Minh-város,1
+FEJÉR,03,Bicske,Ho Chi Minh Város,1
 FEJÉR,03,Bicske,Houston,1
 FEJÉR,03,Bicske,Innsbruck,6
 FEJÉR,03,Bicske,Isztambul,2
@@ -3400,7 +3400,7 @@ FEJÉR,03,Bicske,München,48
 FEJÉR,03,Bicske,New York,4
 FEJÉR,03,Bicske,Nicosia,3
 FEJÉR,03,Bicske,Nürnberg,10
-FEJÉR,03,Bicske,Oslo,3
+FEJÉR,03,Bicske,Osló,3
 FEJÉR,03,Bicske,Párizs,7
 FEJÉR,03,Bicske,Peking,1
 FEJÉR,03,Bicske,Prága,4
@@ -3467,7 +3467,7 @@ FEJÉR,04,Dunaújváros,Moszkva,1
 FEJÉR,04,Dunaújváros,München,48
 FEJÉR,04,Dunaújváros,New York,8
 FEJÉR,04,Dunaújváros,Nürnberg,13
-FEJÉR,04,Dunaújváros,Oslo,3
+FEJÉR,04,Dunaújváros,Osló,3
 FEJÉR,04,Dunaújváros,Párizs,4
 FEJÉR,04,Dunaújváros,Peking,2
 FEJÉR,04,Dunaújváros,Prága,1
@@ -3515,7 +3515,7 @@ FEJÉR,05,Sárbogárd,München,21
 FEJÉR,05,Sárbogárd,New York,4
 FEJÉR,05,Sárbogárd,Nicosia,1
 FEJÉR,05,Sárbogárd,Nürnberg,7
-FEJÉR,05,Sárbogárd,Oslo,1
+FEJÉR,05,Sárbogárd,Osló,1
 FEJÉR,05,Sárbogárd,Párizs,3
 FEJÉR,05,Sárbogárd,Peking,1
 FEJÉR,05,Sárbogárd,Prága,3
@@ -3548,7 +3548,7 @@ GYŐR-MOSON-SOPRON,01,Győr,Genf,1
 GYŐR-MOSON-SOPRON,01,Győr,Hága,31
 GYŐR-MOSON-SOPRON,01,Győr,Hanoi,1
 GYŐR-MOSON-SOPRON,01,Győr,Helsinki,2
-GYŐR-MOSON-SOPRON,01,Győr,Ho Si Minh-város,1
+GYŐR-MOSON-SOPRON,01,Győr,Ho Chi Minh Város,1
 GYŐR-MOSON-SOPRON,01,Győr,Houston,1
 GYŐR-MOSON-SOPRON,01,Győr,Innsbruck,4
 GYŐR-MOSON-SOPRON,01,Győr,Iszlámábád,1
@@ -3577,7 +3577,7 @@ GYŐR-MOSON-SOPRON,01,Győr,Mumbai,1
 GYŐR-MOSON-SOPRON,01,Győr,München,50
 GYŐR-MOSON-SOPRON,01,Győr,New York,5
 GYŐR-MOSON-SOPRON,01,Győr,Nürnberg,11
-GYŐR-MOSON-SOPRON,01,Győr,Oslo,5
+GYŐR-MOSON-SOPRON,01,Győr,Osló,5
 GYŐR-MOSON-SOPRON,01,Győr,Ottawa,1
 GYŐR-MOSON-SOPRON,01,Győr,Párizs,7
 GYŐR-MOSON-SOPRON,01,Győr,Peking,4
@@ -3627,7 +3627,7 @@ GYŐR-MOSON-SOPRON,02,Győr,Genf,2
 GYŐR-MOSON-SOPRON,02,Győr,Hága,27
 GYŐR-MOSON-SOPRON,02,Győr,Hanoi,1
 GYŐR-MOSON-SOPRON,02,Győr,Helsinki,2
-GYŐR-MOSON-SOPRON,02,Győr,Ho Si Minh-város,1
+GYŐR-MOSON-SOPRON,02,Győr,Ho Chi Minh Város,1
 GYŐR-MOSON-SOPRON,02,Győr,Hongkong,1
 GYŐR-MOSON-SOPRON,02,Győr,Innsbruck,9
 GYŐR-MOSON-SOPRON,02,Győr,Jakarta,2
@@ -3649,7 +3649,7 @@ GYŐR-MOSON-SOPRON,02,Győr,München,53
 GYŐR-MOSON-SOPRON,02,Győr,New York,3
 GYŐR-MOSON-SOPRON,02,Győr,Nicosia,1
 GYŐR-MOSON-SOPRON,02,Győr,Nürnberg,11
-GYŐR-MOSON-SOPRON,02,Győr,Oslo,3
+GYŐR-MOSON-SOPRON,02,Győr,Osló,3
 GYŐR-MOSON-SOPRON,02,Győr,Párizs,13
 GYŐR-MOSON-SOPRON,02,Győr,Peking,1
 GYŐR-MOSON-SOPRON,02,Győr,Prága,2
@@ -3817,7 +3817,7 @@ GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Montreal,1
 GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,München,29
 GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,New York,1
 GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Nürnberg,11
-GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Oslo,1
+GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Osló,1
 GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Párizs,5
 GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Pozsony,2
 GYŐR-MOSON-SOPRON,05,Mosonmagyaróvár,Prága,2
@@ -3881,7 +3881,7 @@ HAJDÚ-BIHAR,01,Debrecen,München,36
 HAJDÚ-BIHAR,01,Debrecen,New York,15
 HAJDÚ-BIHAR,01,Debrecen,Nicosia,9
 HAJDÚ-BIHAR,01,Debrecen,Nürnberg,28
-HAJDÚ-BIHAR,01,Debrecen,Oslo,4
+HAJDÚ-BIHAR,01,Debrecen,Osló,4
 HAJDÚ-BIHAR,01,Debrecen,Párizs,15
 HAJDÚ-BIHAR,01,Debrecen,Podgorica,4
 HAJDÚ-BIHAR,01,Debrecen,Prága,2
@@ -3942,7 +3942,7 @@ HAJDÚ-BIHAR,02,Debrecen,München,31
 HAJDÚ-BIHAR,02,Debrecen,New York,9
 HAJDÚ-BIHAR,02,Debrecen,Nicosia,7
 HAJDÚ-BIHAR,02,Debrecen,Nürnberg,7
-HAJDÚ-BIHAR,02,Debrecen,Oslo,4
+HAJDÚ-BIHAR,02,Debrecen,Osló,4
 HAJDÚ-BIHAR,02,Debrecen,Párizs,7
 HAJDÚ-BIHAR,02,Debrecen,Podgorica,2
 HAJDÚ-BIHAR,02,Debrecen,Pozsony,1
@@ -4009,7 +4009,7 @@ HAJDÚ-BIHAR,03,Debrecen,Nairobi,1
 HAJDÚ-BIHAR,03,Debrecen,New York,4
 HAJDÚ-BIHAR,03,Debrecen,Nicosia,1
 HAJDÚ-BIHAR,03,Debrecen,Nürnberg,8
-HAJDÚ-BIHAR,03,Debrecen,Oslo,3
+HAJDÚ-BIHAR,03,Debrecen,Osló,3
 HAJDÚ-BIHAR,03,Debrecen,Párizs,1
 HAJDÚ-BIHAR,03,Debrecen,Prága,3
 HAJDÚ-BIHAR,03,Debrecen,Pristina,2
@@ -4035,7 +4035,7 @@ HAJDÚ-BIHAR,04,Berettyóújfalu,Edinburgh,4
 HAJDÚ-BIHAR,04,Berettyóújfalu,Erbil,1
 HAJDÚ-BIHAR,04,Berettyóújfalu,Hága,14
 HAJDÚ-BIHAR,04,Berettyóújfalu,Helsinki,2
-HAJDÚ-BIHAR,04,Berettyóújfalu,Ho Si Minh-város,1
+HAJDÚ-BIHAR,04,Berettyóújfalu,Ho Chi Minh Város,1
 HAJDÚ-BIHAR,04,Berettyóújfalu,Innsbruck,3
 HAJDÚ-BIHAR,04,Berettyóújfalu,Isztambul,1
 HAJDÚ-BIHAR,04,Berettyóújfalu,Jakarta,1
@@ -4053,7 +4053,7 @@ HAJDÚ-BIHAR,04,Berettyóújfalu,München,22
 HAJDÚ-BIHAR,04,Berettyóújfalu,New York,3
 HAJDÚ-BIHAR,04,Berettyóújfalu,Nicosia,1
 HAJDÚ-BIHAR,04,Berettyóújfalu,Nürnberg,2
-HAJDÚ-BIHAR,04,Berettyóújfalu,Oslo,2
+HAJDÚ-BIHAR,04,Berettyóújfalu,Osló,2
 HAJDÚ-BIHAR,04,Berettyóújfalu,Párizs,1
 HAJDÚ-BIHAR,04,Berettyóújfalu,Podgorica,1
 HAJDÚ-BIHAR,04,Berettyóújfalu,Prága,3
@@ -4103,7 +4103,7 @@ HAJDÚ-BIHAR,05,Hajdúszoboszló,Milánó,7
 HAJDÚ-BIHAR,05,Hajdúszoboszló,München,31
 HAJDÚ-BIHAR,05,Hajdúszoboszló,New York,3
 HAJDÚ-BIHAR,05,Hajdúszoboszló,Nürnberg,6
-HAJDÚ-BIHAR,05,Hajdúszoboszló,Oslo,1
+HAJDÚ-BIHAR,05,Hajdúszoboszló,Osló,1
 HAJDÚ-BIHAR,05,Hajdúszoboszló,Párizs,3
 HAJDÚ-BIHAR,05,Hajdúszoboszló,Pristina,1
 HAJDÚ-BIHAR,05,Hajdúszoboszló,Quito,1
@@ -4219,7 +4219,7 @@ HEVES,01,Eger,München,42
 HEVES,01,Eger,New York,7
 HEVES,01,Eger,Nicosia,3
 HEVES,01,Eger,Nürnberg,10
-HEVES,01,Eger,Oslo,7
+HEVES,01,Eger,Osló,7
 HEVES,01,Eger,Párizs,23
 HEVES,01,Eger,Pozsony,2
 HEVES,01,Eger,Prága,3
@@ -4279,7 +4279,7 @@ HEVES,02,Gyöngyös,Moszkva,1
 HEVES,02,Gyöngyös,München,45
 HEVES,02,Gyöngyös,New York,8
 HEVES,02,Gyöngyös,Nürnberg,9
-HEVES,02,Gyöngyös,Oslo,2
+HEVES,02,Gyöngyös,Osló,2
 HEVES,02,Gyöngyös,Párizs,6
 HEVES,02,Gyöngyös,Pozsony,1
 HEVES,02,Gyöngyös,Prága,5
@@ -4340,7 +4340,7 @@ HEVES,03,Hatvan,München,23
 HEVES,03,Hatvan,New York,6
 HEVES,03,Hatvan,Nicosia,1
 HEVES,03,Hatvan,Nürnberg,5
-HEVES,03,Hatvan,Oslo,3
+HEVES,03,Hatvan,Osló,3
 HEVES,03,Hatvan,Párizs,3
 HEVES,03,Hatvan,Prága,3
 HEVES,03,Hatvan,San Francisco,1
@@ -4401,7 +4401,7 @@ JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,München,47
 JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,New York,4
 JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Nicosia,4
 JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Nürnberg,18
-JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Oslo,14
+JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Osló,14
 JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Párizs,8
 JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Phnom Penh,1
 JÁSZ-NAGYKUN-SZOLNOK,01,Szolnok,Pozsony,1
@@ -4457,7 +4457,7 @@ JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Miami,9
 JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Milánó,4
 JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,München,14
 JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Nürnberg,5
-JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Oslo,1
+JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Osló,1
 JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Ottawa,3
 JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Párizs,5
 JÁSZ-NAGYKUN-SZOLNOK,02,Jászberény,Peking,1
@@ -4510,7 +4510,7 @@ JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,München,24
 JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,New York,7
 JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Nicosia,2
 JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Nürnberg,12
-JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Oslo,4
+JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Osló,4
 JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Párizs,8
 JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Pozsony,1
 JÁSZ-NAGYKUN-SZOLNOK,03,Karcag,Prága,1
@@ -4568,7 +4568,7 @@ JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,München,21
 JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,New York,5
 JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Nicosia,1
 JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Nürnberg,13
-JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Oslo,4
+JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Osló,4
 JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Párizs,4
 JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Prága,4
 JÁSZ-NAGYKUN-SZOLNOK,04,Törökszentmiklós,Pristina,2
@@ -4626,7 +4626,7 @@ KOMÁROM-ESZTERGOM,01,Tatabánya,München,59
 KOMÁROM-ESZTERGOM,01,Tatabánya,New York,7
 KOMÁROM-ESZTERGOM,01,Tatabánya,Nicosia,1
 KOMÁROM-ESZTERGOM,01,Tatabánya,Nürnberg,17
-KOMÁROM-ESZTERGOM,01,Tatabánya,Oslo,6
+KOMÁROM-ESZTERGOM,01,Tatabánya,Osló,6
 KOMÁROM-ESZTERGOM,01,Tatabánya,Panamaváros,1
 KOMÁROM-ESZTERGOM,01,Tatabánya,Párizs,6
 KOMÁROM-ESZTERGOM,01,Tatabánya,Podgorica,2
@@ -4691,7 +4691,7 @@ KOMÁROM-ESZTERGOM,02,Esztergom,München,66
 KOMÁROM-ESZTERGOM,02,Esztergom,New York,7
 KOMÁROM-ESZTERGOM,02,Esztergom,Nicosia,1
 KOMÁROM-ESZTERGOM,02,Esztergom,Nürnberg,16
-KOMÁROM-ESZTERGOM,02,Esztergom,Oslo,3
+KOMÁROM-ESZTERGOM,02,Esztergom,Osló,3
 KOMÁROM-ESZTERGOM,02,Esztergom,Párizs,11
 KOMÁROM-ESZTERGOM,02,Esztergom,Peking,1
 KOMÁROM-ESZTERGOM,02,Esztergom,Pozsony,1
@@ -4751,7 +4751,7 @@ KOMÁROM-ESZTERGOM,03,Komárom,Milánó,3
 KOMÁROM-ESZTERGOM,03,Komárom,Moszkva,1
 KOMÁROM-ESZTERGOM,03,Komárom,München,45
 KOMÁROM-ESZTERGOM,03,Komárom,Nürnberg,7
-KOMÁROM-ESZTERGOM,03,Komárom,Oslo,3
+KOMÁROM-ESZTERGOM,03,Komárom,Osló,3
 KOMÁROM-ESZTERGOM,03,Komárom,Párizs,4
 KOMÁROM-ESZTERGOM,03,Komárom,Podgorica,1
 KOMÁROM-ESZTERGOM,03,Komárom,Pozsony,2
@@ -4807,7 +4807,7 @@ NÓGRÁD,01,Salgótarján,München,56
 NÓGRÁD,01,Salgótarján,Nairobi,1
 NÓGRÁD,01,Salgótarján,New York,4
 NÓGRÁD,01,Salgótarján,Nürnberg,15
-NÓGRÁD,01,Salgótarján,Oslo,6
+NÓGRÁD,01,Salgótarján,Osló,6
 NÓGRÁD,01,Salgótarján,Panamaváros,1
 NÓGRÁD,01,Salgótarján,Párizs,11
 NÓGRÁD,01,Salgótarján,Peking,2
@@ -4861,7 +4861,7 @@ NÓGRÁD,02,Balassagyarmat,Montreal,1
 NÓGRÁD,02,Balassagyarmat,München,41
 NÓGRÁD,02,Balassagyarmat,New York,4
 NÓGRÁD,02,Balassagyarmat,Nürnberg,12
-NÓGRÁD,02,Balassagyarmat,Oslo,2
+NÓGRÁD,02,Balassagyarmat,Osló,2
 NÓGRÁD,02,Balassagyarmat,Ottawa,1
 NÓGRÁD,02,Balassagyarmat,Párizs,7
 NÓGRÁD,02,Balassagyarmat,Peking,1
@@ -4934,9 +4934,9 @@ PEST,01,Érd,Moszkva,2
 PEST,01,Érd,München,36
 PEST,01,Érd,New York,13
 PEST,01,Érd,Nicosia,3
-PEST,01,Érd,Nur-Szultán,2
+PEST,01,Érd,Asztana,2
 PEST,01,Érd,Nürnberg,15
-PEST,01,Érd,Oslo,10
+PEST,01,Érd,Osló,10
 PEST,01,Érd,Ottawa,1
 PEST,01,Érd,Panamaváros,2
 PEST,01,Érd,Párizs,21
@@ -4986,7 +4986,7 @@ PEST,02,Budakeszi,Buenos Aires,1
 PEST,02,Budakeszi,Bukarest,4
 PEST,02,Budakeszi,Canberra,3
 PEST,02,Budakeszi,Chicago,5
-PEST,02,Budakeszi,Chisinau,1
+PEST,02,Budakeszi,Kisinyov,1
 PEST,02,Budakeszi,Csíkszereda,72
 PEST,02,Budakeszi,Dakka,1
 PEST,02,Budakeszi,Doha,4
@@ -5031,7 +5031,7 @@ PEST,02,Budakeszi,München,83
 PEST,02,Budakeszi,New York,17
 PEST,02,Budakeszi,Nicosia,4
 PEST,02,Budakeszi,Nürnberg,28
-PEST,02,Budakeszi,Oslo,16
+PEST,02,Budakeszi,Osló,16
 PEST,02,Budakeszi,Ottawa,2
 PEST,02,Budakeszi,Panamaváros,1
 PEST,02,Budakeszi,Párizs,43
@@ -5101,13 +5101,13 @@ PEST,03,Szentendre,Genf,14
 PEST,03,Szentendre,Hága,79
 PEST,03,Szentendre,Havanna,1
 PEST,03,Szentendre,Helsinki,23
-PEST,03,Szentendre,Ho Si Minh-város,2
+PEST,03,Szentendre,Ho Chi Minh Város,2
 PEST,03,Szentendre,Houston,4
 PEST,03,Szentendre,Innsbruck,13
 PEST,03,Szentendre,Iszlámábád,3
 PEST,03,Szentendre,Isztambul,6
 PEST,03,Szentendre,Kampala,1
-PEST,03,Szentendre,Kazan,2
+PEST,03,Szentendre,Kazány,2
 PEST,03,Szentendre,Kolozsvár,12
 PEST,03,Szentendre,Koppenhága,44
 PEST,03,Szentendre,Krakkó,3
@@ -5137,7 +5137,7 @@ PEST,03,Szentendre,Nairobi,3
 PEST,03,Szentendre,New York,22
 PEST,03,Szentendre,Nicosia,1
 PEST,03,Szentendre,Nürnberg,26
-PEST,03,Szentendre,Oslo,13
+PEST,03,Szentendre,Osló,13
 PEST,03,Szentendre,Ottawa,5
 PEST,03,Szentendre,Párizs,47
 PEST,03,Szentendre,Peking,3
@@ -5199,7 +5199,7 @@ PEST,04,Vác,Erbil,1
 PEST,04,Vác,Genf,6
 PEST,04,Vác,Hága,33
 PEST,04,Vác,Helsinki,9
-PEST,04,Vác,Ho Si Minh-város,1
+PEST,04,Vác,Ho Chi Minh Város,1
 PEST,04,Vác,Houston,3
 PEST,04,Vác,Innsbruck,11
 PEST,04,Vác,Iszlámábád,2
@@ -5224,7 +5224,7 @@ PEST,04,Vác,München,64
 PEST,04,Vác,New York,3
 PEST,04,Vác,Nicosia,2
 PEST,04,Vác,Nürnberg,13
-PEST,04,Vác,Oslo,14
+PEST,04,Vác,Osló,14
 PEST,04,Vác,Párizs,7
 PEST,04,Vác,Podgorica,1
 PEST,04,Vác,Prága,6
@@ -5277,7 +5277,7 @@ PEST,05,Dunakeszi,Genf,2
 PEST,05,Dunakeszi,Hága,67
 PEST,05,Dunakeszi,Hanoi,1
 PEST,05,Dunakeszi,Helsinki,8
-PEST,05,Dunakeszi,Ho Si Minh-város,1
+PEST,05,Dunakeszi,Ho Chi Minh Város,1
 PEST,05,Dunakeszi,Houston,3
 PEST,05,Dunakeszi,Innsbruck,5
 PEST,05,Dunakeszi,Isztambul,3
@@ -5307,7 +5307,7 @@ PEST,05,Dunakeszi,München,57
 PEST,05,Dunakeszi,Nairobi,2
 PEST,05,Dunakeszi,New York,13
 PEST,05,Dunakeszi,Nürnberg,27
-PEST,05,Dunakeszi,Oslo,5
+PEST,05,Dunakeszi,Osló,5
 PEST,05,Dunakeszi,Párizs,18
 PEST,05,Dunakeszi,Peking,1
 PEST,05,Dunakeszi,Pozsony,3
@@ -5355,7 +5355,7 @@ PEST,06,Gödöllő,Bern,44
 PEST,06,Gödöllő,Brüsszel,23
 PEST,06,Gödöllő,Bukarest,5
 PEST,06,Gödöllő,Chicago,4
-PEST,06,Gödöllő,Chisinau,1
+PEST,06,Gödöllő,Kisinyov,1
 PEST,06,Gödöllő,Csíkszereda,31
 PEST,06,Gödöllő,Doha,2
 PEST,06,Gödöllő,Dublin,13
@@ -5393,7 +5393,7 @@ PEST,06,Gödöllő,Nairobi,1
 PEST,06,Gödöllő,New York,7
 PEST,06,Gödöllő,Nicosia,4
 PEST,06,Gödöllő,Nürnberg,13
-PEST,06,Gödöllő,Oslo,10
+PEST,06,Gödöllő,Osló,10
 PEST,06,Gödöllő,Panamaváros,1
 PEST,06,Gödöllő,Párizs,26
 PEST,06,Gödöllő,Pozsony,1
@@ -5478,7 +5478,7 @@ PEST,07,Vecsés,München,35
 PEST,07,Vecsés,New York,6
 PEST,07,Vecsés,Nicosia,2
 PEST,07,Vecsés,Nürnberg,14
-PEST,07,Vecsés,Oslo,11
+PEST,07,Vecsés,Osló,11
 PEST,07,Vecsés,Panamaváros,1
 PEST,07,Vecsés,Párizs,16
 PEST,07,Vecsés,Peking,2
@@ -5557,7 +5557,7 @@ PEST,08,Szigetszentmiklós,München,48
 PEST,08,Szigetszentmiklós,New York,12
 PEST,08,Szigetszentmiklós,Nicosia,1
 PEST,08,Szigetszentmiklós,Nürnberg,8
-PEST,08,Szigetszentmiklós,Oslo,5
+PEST,08,Szigetszentmiklós,Osló,5
 PEST,08,Szigetszentmiklós,Párizs,7
 PEST,08,Szigetszentmiklós,Podgorica,2
 PEST,08,Szigetszentmiklós,Prága,1
@@ -5647,7 +5647,7 @@ PEST,10,Monor,Berlin,7
 PEST,10,Monor,Bern,17
 PEST,10,Monor,Brüsszel,10
 PEST,10,Monor,Chicago,1
-PEST,10,Monor,Chisinau,1
+PEST,10,Monor,Kisinyov,1
 PEST,10,Monor,Csíkszereda,35
 PEST,10,Monor,Dublin,7
 PEST,10,Monor,Düsseldorf,18
@@ -5675,7 +5675,7 @@ PEST,10,Monor,München,24
 PEST,10,Monor,New York,3
 PEST,10,Monor,Nicosia,1
 PEST,10,Monor,Nürnberg,2
-PEST,10,Monor,Oslo,2
+PEST,10,Monor,Osló,2
 PEST,10,Monor,Párizs,7
 PEST,10,Monor,Pozsony,3
 PEST,10,Monor,Prága,5
@@ -5739,7 +5739,7 @@ PEST,11,Dabas,München,33
 PEST,11,Dabas,New York,5
 PEST,11,Dabas,Nicosia,2
 PEST,11,Dabas,Nürnberg,19
-PEST,11,Dabas,Oslo,3
+PEST,11,Dabas,Osló,3
 PEST,11,Dabas,Párizs,9
 PEST,11,Dabas,Pozsony,1
 PEST,11,Dabas,Prága,2
@@ -5789,7 +5789,7 @@ PEST,12,Cegléd,Kuangcsou,1
 PEST,12,Cegléd,Lisszabon,1
 PEST,12,Cegléd,London,45
 PEST,12,Cegléd,Luxembourg,2
-PEST,12,Cegléd,Lviv,1
+PEST,12,Cegléd,Kijev,1
 PEST,12,Cegléd,Lyon,1
 PEST,12,Cegléd,Madrid,2
 PEST,12,Cegléd,Malaga,2
@@ -5800,7 +5800,7 @@ PEST,12,Cegléd,München,32
 PEST,12,Cegléd,New York,2
 PEST,12,Cegléd,Nicosia,2
 PEST,12,Cegléd,Nürnberg,3
-PEST,12,Cegléd,Oslo,1
+PEST,12,Cegléd,Osló,1
 PEST,12,Cegléd,Párizs,4
 PEST,12,Cegléd,Podgorica,1
 PEST,12,Cegléd,Prága,3
@@ -5858,7 +5858,7 @@ SOMOGY,01,Kaposvár,Milánó,1
 SOMOGY,01,Kaposvár,München,33
 SOMOGY,01,Kaposvár,New York,5
 SOMOGY,01,Kaposvár,Nürnberg,17
-SOMOGY,01,Kaposvár,Oslo,4
+SOMOGY,01,Kaposvár,Osló,4
 SOMOGY,01,Kaposvár,Párizs,2
 SOMOGY,01,Kaposvár,Prága,3
 SOMOGY,01,Kaposvár,Pristina,5
@@ -5967,7 +5967,7 @@ SOMOGY,03,Marcali,München,40
 SOMOGY,03,Marcali,New York,5
 SOMOGY,03,Marcali,Nicosia,1
 SOMOGY,03,Marcali,Nürnberg,22
-SOMOGY,03,Marcali,Oslo,5
+SOMOGY,03,Marcali,Osló,5
 SOMOGY,03,Marcali,Párizs,4
 SOMOGY,03,Marcali,Róma,1
 SOMOGY,03,Marcali,San Francisco,2
@@ -6024,7 +6024,7 @@ SOMOGY,04,Siófok,Mumbai,1
 SOMOGY,04,Siófok,München,50
 SOMOGY,04,Siófok,New York,4
 SOMOGY,04,Siófok,Nürnberg,12
-SOMOGY,04,Siófok,Oslo,3
+SOMOGY,04,Siófok,Osló,3
 SOMOGY,04,Siófok,Párizs,5
 SOMOGY,04,Siófok,Pozsony,1
 SOMOGY,04,Siófok,Prága,3
@@ -6089,7 +6089,7 @@ SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,München,44
 SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,New York,13
 SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Nicosia,3
 SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Nürnberg,8
-SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Oslo,2
+SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Osló,2
 SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Panamaváros,1
 SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Párizs,13
 SZABOLCS-SZATMÁR-BEREG,01,Nyíregyháza,Peking,1
@@ -6198,7 +6198,7 @@ SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Moszkva,1
 SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,München,25
 SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,New York,3
 SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Nürnberg,8
-SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Oslo,1
+SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Osló,1
 SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Párizs,2
 SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Prága,1
 SZABOLCS-SZATMÁR-BEREG,03,Kisvárda,Pristina,4
@@ -6243,7 +6243,7 @@ SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Moszkva,2
 SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,München,14
 SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,New York,2
 SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Nürnberg,7
-SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Oslo,1
+SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Osló,1
 SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Ottawa,1
 SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Párizs,3
 SZABOLCS-SZATMÁR-BEREG,04,Vásárosnamény,Pozsony,1
@@ -6290,7 +6290,7 @@ SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Miami,1
 SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,München,28
 SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,New York,2
 SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Nürnberg,13
-SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Oslo,1
+SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Osló,1
 SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Podgorica,1
 SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Pozsony,1
 SZABOLCS-SZATMÁR-BEREG,05,Mátészalka,Prága,1
@@ -6443,7 +6443,7 @@ TOLNA,02,Dombóvár,Milánó,4
 TOLNA,02,Dombóvár,München,62
 TOLNA,02,Dombóvár,New York,1
 TOLNA,02,Dombóvár,Nürnberg,15
-TOLNA,02,Dombóvár,Oslo,3
+TOLNA,02,Dombóvár,Osló,3
 TOLNA,02,Dombóvár,Párizs,2
 TOLNA,02,Dombóvár,Prága,1
 TOLNA,02,Dombóvár,Riga,1
@@ -6490,7 +6490,7 @@ TOLNA,03,Paks,Milánó,4
 TOLNA,03,Paks,München,27
 TOLNA,03,Paks,New York,1
 TOLNA,03,Paks,Nürnberg,7
-TOLNA,03,Paks,Oslo,3
+TOLNA,03,Paks,Osló,3
 TOLNA,03,Paks,Párizs,1
 TOLNA,03,Paks,Prága,1
 TOLNA,03,Paks,Pristina,2
@@ -6537,9 +6537,9 @@ VAS,01,Szombathely,Melbourne,1
 VAS,01,Szombathely,Milánó,4
 VAS,01,Szombathely,München,22
 VAS,01,Szombathely,New York,6
-VAS,01,Szombathely,Nur-Szultán,1
+VAS,01,Szombathely,Asztana,1
 VAS,01,Szombathely,Nürnberg,10
-VAS,01,Szombathely,Oslo,1
+VAS,01,Szombathely,Osló,1
 VAS,01,Szombathely,Ottawa,1
 VAS,01,Szombathely,Párizs,10
 VAS,01,Szombathely,Peking,2
@@ -6641,7 +6641,7 @@ VAS,03,Körmend,München,21
 VAS,03,Körmend,New York,1
 VAS,03,Körmend,Nicosia,1
 VAS,03,Körmend,Nürnberg,5
-VAS,03,Körmend,Oslo,1
+VAS,03,Körmend,Osló,1
 VAS,03,Körmend,Párizs,1
 VAS,03,Körmend,Prága,2
 VAS,03,Körmend,Pretoria,2
@@ -6700,7 +6700,7 @@ VESZPRÉM,01,Veszprém,München,38
 VESZPRÉM,01,Veszprém,New York,8
 VESZPRÉM,01,Veszprém,Nicosia,2
 VESZPRÉM,01,Veszprém,Nürnberg,20
-VESZPRÉM,01,Veszprém,Oslo,5
+VESZPRÉM,01,Veszprém,Osló,5
 VESZPRÉM,01,Veszprém,Párizs,8
 VESZPRÉM,01,Veszprém,Pozsony,1
 VESZPRÉM,01,Veszprém,Prága,3
@@ -6776,9 +6776,9 @@ VESZPRÉM,02,Balatonfüred,München,78
 VESZPRÉM,02,Balatonfüred,Nairobi,2
 VESZPRÉM,02,Balatonfüred,New York,5
 VESZPRÉM,02,Balatonfüred,Nicosia,2
-VESZPRÉM,02,Balatonfüred,Nur-Szultán,2
+VESZPRÉM,02,Balatonfüred,Asztana,2
 VESZPRÉM,02,Balatonfüred,Nürnberg,29
-VESZPRÉM,02,Balatonfüred,Oslo,8
+VESZPRÉM,02,Balatonfüred,Osló,8
 VESZPRÉM,02,Balatonfüred,Párizs,11
 VESZPRÉM,02,Balatonfüred,Pozsony,1
 VESZPRÉM,02,Balatonfüred,Prága,5
@@ -6812,7 +6812,7 @@ VESZPRÉM,03,Tapolca,Bejrút,1
 VESZPRÉM,03,Tapolca,Berlin,24
 VESZPRÉM,03,Tapolca,Bern,26
 VESZPRÉM,03,Tapolca,Brüsszel,15
-VESZPRÉM,03,Tapolca,Chisinau,1
+VESZPRÉM,03,Tapolca,Kisinyov,1
 VESZPRÉM,03,Tapolca,Csíkszereda,12
 VESZPRÉM,03,Tapolca,Dublin,12
 VESZPRÉM,03,Tapolca,Düsseldorf,14
@@ -6821,7 +6821,7 @@ VESZPRÉM,03,Tapolca,Erbil,1
 VESZPRÉM,03,Tapolca,Genf,4
 VESZPRÉM,03,Tapolca,Hága,27
 VESZPRÉM,03,Tapolca,Helsinki,2
-VESZPRÉM,03,Tapolca,Ho Si Minh-város,1
+VESZPRÉM,03,Tapolca,Ho Chi Minh Város,1
 VESZPRÉM,03,Tapolca,Innsbruck,18
 VESZPRÉM,03,Tapolca,Kassa,1
 VESZPRÉM,03,Tapolca,Kolozsvár,10
@@ -6840,7 +6840,7 @@ VESZPRÉM,03,Tapolca,Montreal,1
 VESZPRÉM,03,Tapolca,München,24
 VESZPRÉM,03,Tapolca,New York,1
 VESZPRÉM,03,Tapolca,Nürnberg,14
-VESZPRÉM,03,Tapolca,Oslo,2
+VESZPRÉM,03,Tapolca,Osló,2
 VESZPRÉM,03,Tapolca,Párizs,14
 VESZPRÉM,03,Tapolca,Peking,1
 VESZPRÉM,03,Tapolca,Prága,2
@@ -6899,7 +6899,7 @@ VESZPRÉM,04,Pápa,München,35
 VESZPRÉM,04,Pápa,New York,5
 VESZPRÉM,04,Pápa,Nicosia,1
 VESZPRÉM,04,Pápa,Nürnberg,9
-VESZPRÉM,04,Pápa,Oslo,2
+VESZPRÉM,04,Pápa,Osló,2
 VESZPRÉM,04,Pápa,Párizs,3
 VESZPRÉM,04,Pápa,Podgorica,1
 VESZPRÉM,04,Pápa,Pozsony,1
@@ -6941,7 +6941,7 @@ ZALA,01,Zalaegerszeg,Erbil,1
 ZALA,01,Zalaegerszeg,Genf,1
 ZALA,01,Zalaegerszeg,Hága,27
 ZALA,01,Zalaegerszeg,Helsinki,4
-ZALA,01,Zalaegerszeg,Ho Si Minh-város,1
+ZALA,01,Zalaegerszeg,Ho Chi Minh Város,1
 ZALA,01,Zalaegerszeg,Hongkong,1
 ZALA,01,Zalaegerszeg,Houston,2
 ZALA,01,Zalaegerszeg,Innsbruck,13
@@ -6964,7 +6964,7 @@ ZALA,01,Zalaegerszeg,München,49
 ZALA,01,Zalaegerszeg,New York,5
 ZALA,01,Zalaegerszeg,Nicosia,2
 ZALA,01,Zalaegerszeg,Nürnberg,11
-ZALA,01,Zalaegerszeg,Oslo,6
+ZALA,01,Zalaegerszeg,Osló,6
 ZALA,01,Zalaegerszeg,Párizs,7
 ZALA,01,Zalaegerszeg,Prága,1
 ZALA,01,Zalaegerszeg,Pristina,1
@@ -6993,7 +6993,7 @@ ZALA,02,Keszthely,Berlin,16
 ZALA,02,Keszthely,Bern,41
 ZALA,02,Keszthely,Brüsszel,20
 ZALA,02,Keszthely,Chicago,1
-ZALA,02,Keszthely,Chisinau,2
+ZALA,02,Keszthely,Kisinyov,2
 ZALA,02,Keszthely,Csíkszereda,10
 ZALA,02,Keszthely,Doha,2
 ZALA,02,Keszthely,Dublin,15
@@ -7022,7 +7022,7 @@ ZALA,02,Keszthely,Moszkva,1
 ZALA,02,Keszthely,München,58
 ZALA,02,Keszthely,New York,2
 ZALA,02,Keszthely,Nürnberg,9
-ZALA,02,Keszthely,Oslo,10
+ZALA,02,Keszthely,Osló,10
 ZALA,02,Keszthely,Párizs,4
 ZALA,02,Keszthely,Pozsony,1
 ZALA,02,Keszthely,Prága,6
@@ -7054,7 +7054,7 @@ ZALA,03,Nagykanizsa,Bern,21
 ZALA,03,Nagykanizsa,Bogota,1
 ZALA,03,Nagykanizsa,Brüsszel,7
 ZALA,03,Nagykanizsa,Chicago,1
-ZALA,03,Nagykanizsa,Chisinau,1
+ZALA,03,Nagykanizsa,Kisinyov,1
 ZALA,03,Nagykanizsa,Csíkszereda,4
 ZALA,03,Nagykanizsa,Dublin,10
 ZALA,03,Nagykanizsa,Düsseldorf,8
@@ -7080,7 +7080,7 @@ ZALA,03,Nagykanizsa,München,45
 ZALA,03,Nagykanizsa,New York,5
 ZALA,03,Nagykanizsa,Nicosia,1
 ZALA,03,Nagykanizsa,Nürnberg,10
-ZALA,03,Nagykanizsa,Oslo,4
+ZALA,03,Nagykanizsa,Osló,4
 ZALA,03,Nagykanizsa,Párizs,6
 ZALA,03,Nagykanizsa,Prága,1
 ZALA,03,Nagykanizsa,Pretoria,1

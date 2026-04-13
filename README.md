@@ -12,6 +12,10 @@ A választóköri térképadatok az index.hu 2018-as választási térképéből
 
 A térkép itt megtekinthető: http://sztupy.hu/honnanjottel/
 
+2018-as adat innen van: https://static.valasztas.hu/dyn/pv18/vertaj/hu/v25.html
+
+A 2022-es és 2026-os adat Közérdekű Adatigénylés által lett beszerezve: https://kimittud.hu/request/osszesitett_kulkepviseleti_nevje
+
 # Használat
 
 Kattints egy külképviseleti szavazóhelyre, hogy megtudd mely megyékből / szavazókörökből érkeztek oda a legtöbben.

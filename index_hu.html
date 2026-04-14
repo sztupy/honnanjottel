@@ -32,6 +32,7 @@
   <div id="help">
     <a href="index_en.html">🏴󠁧󠁢󠁥󠁮󠁧󠁿 For English version please click here</a>
     <h1>Honnan jöttél</h1>
+    <button onclick="hideHelp()" style="font-size: 1.5em;">Már olvastam a súgót, mutasd a térképet</button>
     <p>A magyar választási rendszer egyik különlegessége, hogy nyomon követhetőve teszi, hogy melyik külképviseletre
       honnan jöttek oda a szavazók. Tény, hogy ezen szavazók egy része olyan lesz, aki ideiglenesen tartózkodik a
       választás környékén a külképviselet közelében (pl. éppen ott nyaral), de számos helyszínnél valószínűbb, hogy már
@@ -46,15 +47,30 @@
     <p>A bal alsó sarokban lehet változtatni azon, hogy melyik év adatsorát szeretnénk nézni. Ha összehasonlító évet
       választunk, akkor a világoskék szín fogja jelenteni az enyhe, a sötétkép az erős létszámcsökkenést, míg a sárga és
       piros a létszámnövekvést</p>
-    <p>Az "Egyéni" gombra kattintva választhatunk hogy a megyék / választókörzetekben abszolút értékben legyenek a
-      választópolgárok szinezve, vagy kiegyenlített módon - a kevesebb lakossal rendelkező megyék arányosan sötétebb
-      színnel legyenek ábrázolva.</p>
-    <p>Amennyiben a beépített színezés nem lenne megfelelő <button onclick="swapColors()">ide kattintva</button> színek
-      helyett
-      fekete-fehér árnyalatokkal lesz az eredmény bemutatva</p>
     <p>Ha újra a globális külképviseleti szavazati térképet szeretnénk nézni, csak kattintani kell a "Kiválasztott
       külképviselet" gombra, balra lent.</p>
-    <button onclick="hideHelp()">Megértettem, szeretném nézni a térképet</button>
+    <h2>Beállítások</h2>
+    <p>Alapesetben abszolút számadatokkal dolgozik a rendszer, azaz egy szavazó az akárhonnan jött egy szavazónak
+      minősül és úgy is lesz ábrázolva és színezve</p>
+    <p>Mivel a megyék és választókerületek mérete nem egyforma így a több lakosú területek (pl. Budapest)
+      abszolútértékben jobban fog érvényesülni. Ha ezt az egyenlőtlenséget szeretnénk kiküszöbölni az "Egyéni" gombra
+      kattintva válthatunk "Lakosságarányos" nézetre, amely esetben a rendszer úgy veszi szinezéskor, hogy minden megye
+      és választókerület egyforma méretű.</p>
+    <p>Összehasonlító adatsor megtekintése esetén alapesetben szintén abszolút szavazópolgárkülönbséget vesz a rendszer.
+      Ha azt szeretnénk nézni, hogy relatíve mennyivel nőtt vagy csökkent egy kerületből jövő emberek száma,akkor a
+      "Normál" gombra kattintva válthatunk "Időarányos" nézetre. Például 2018 és 2026 között a külföldön szavazó
+      állampolgárok száma megmásfélszereződött. Így ha például egy szavazókörben 2018-ban 100 fő szavazott, akkor
+      2026-ban 150 fő lesz ott várható. Ha csak 140 fő ment el onnan szavazni ilyenkor úgy vesszük, hogy 10-el csökkent
+      a szavazók száma, míg normál módban 40 extra főt fog a rendszer megjeleníteni.</p>
+    <p>Amennyiben a beépített színezés nem lenne megfelelő <button onclick="swapColors()">ide kattintva</button> színek
+      helyett fekete-fehér árnyalatokkal lesz az eredmény bemutatva</p>
+    <h2>Megjegyzések</h2>
+    <p>2026-ban megváltoztak a választási körzetek határai. Emellett Budapesten csökkent kettővel, míg Pest megyében
+      nőtt kettővel a választókörzetek száma. Összehasonlító elemzéseknél ezek az új körzetek úgy jelennek meg, mint ha
+      0 szavazóval rendelkeztek volna 2022-ben.</p>
+    <p>Az ukrajnai háború miatt a kijevi nagykövetség ideiglenesen Lvivbe költözött 2022-ben, majd 2026-ban
+      visszaköltözött Kijevbe. A térképen a 2022-es adat is az lvivi követséged Kijevben ábrázolja</p>
+    <button onclick="hideHelp()" style="font-size: 1.5em;">Megértettem, szeretném nézni a térképet</button>
   </div>
   <div id="map"></div>
   <div id="hun"></div>
@@ -68,6 +84,7 @@
     <button id="year_2018-2026">2018-2026</button>
     <div id="data"></div>
     <div id="type">Egyéni</div>
+    <div id="time_type">Normál</div>
   </div>
   <a class="github-fork-ribbon" href="https://github.com/sztupy/honnanjottel" data-ribbon="Info / GitHub"
     title="Info / GitHub">Info / GitHub</a>

@@ -2,6 +2,7 @@ let language = localStorage.getItem('language');
 
 let currentCity = '';
 let countyCalculationType = 'total';
+let timeCalculationType = 'normal';
 let tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   maxZoom: 18,
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -27,6 +28,7 @@ let hunLayer;
 let countyLayer;
 let currentYear = "2026";
 let colorScheme = 'normal';
+let foreignCityVoters = [];
 
 let MEGYE_MAX = {};
 let MEGYE_LAKOSOK_FIX = {};
@@ -118,12 +120,22 @@ function getColor(percentage) {
 function handler(type, foreign_city) {
   let max = 0;
   let count = 0;
-  let countCounty = {}
+  let countCounty = {};
+
+  let timeDiff = false;
+  if (timeCalculationType == 'diff' && currentYear.split("-").length == 2) {
+    timeDiff = true;
+  }
+
   REGISZTRALTAK[currentYear].forEach(function (r) {
     let r_county = r[0];
     let r_code = r[1];
     let r_city = r[2];
     let r_count = r[3];
+
+    if (timeDiff) {
+      r_count = r[4];
+    }
 
     if (countyCalculationType == 'avg') {
       r_count *= MEGYE_LAKOSOK_FIX[currentYear][r_county][r_code];
@@ -144,6 +156,7 @@ function handler(type, foreign_city) {
       countCounty[l] = countCounty[l] * MEGYE_LAKOSOK_FIX[currentYear][l][0];
     }
   }
+
   let maxCounty = Math.max(Math.max(...Object.values(countCounty)), -Math.min(...Object.values(countCounty)));
 
   return function (feature, layer) {
@@ -154,6 +167,9 @@ function handler(type, foreign_city) {
       let r_code = r[1];
       let r_city = r[2];
       let r_count = r[3];
+
+      if (timeDiff)
+        r_count = r[4];
 
       if (countyCalculationType == 'avg') {
         r_count *= MEGYE_LAKOSOK_FIX[currentYear][r_county][r_code];
@@ -171,7 +187,7 @@ function handler(type, foreign_city) {
                 '</b><br/>' + (percentage * 100).toFixed(3) + '%');
             } else {
               layer.bindPopup('<b>' + feature.properties.OEVK_NAME +
-                '</b><br/>' + (language == 'en' ? 'Voters: ' : 'Szavazók: ') + r_count + ' (' + ((r_count / count) * 100).toFixed(3) + '%)');
+                '</b><br/>' + (language == 'en' ? 'Voters: ' : 'Szavazók: ') + r_count + ' (' + Math.abs((r_count / count) * 100).toFixed(3) + '%)');
             }
             return;
           }
@@ -187,7 +203,7 @@ function handler(type, foreign_city) {
                 '</b><br/>' + (percentage * 100).toFixed(3) + '%');
             } else {
               layer.bindPopup('<b>' + feature.properties.MEGY_NEV +
-                '</b><br/>' + (language == 'en' ? 'Voters: ' : 'Szavazók: ') + countCounty[r_county] + ' (' + ((countCounty[r_county] / count) * 100).toFixed(3) + '%)');
+                '</b><br/>' + (language == 'en' ? 'Voters: ' : 'Szavazók: ') + countCounty[r_county] + ' (' + Math.abs((countCounty[r_county] / count) * 100).toFixed(3) + '%)');
             }
             return;
           }
@@ -227,18 +243,26 @@ function loadKor(foreign_city) {
     document.getElementById('data').innerHTML = (language == 'en' ? 'Selected city: ' : 'Kiválasztott város: ') + foreign_city;
   }
 
+  let timeDiff = false;
+  if (timeCalculationType == 'diff' && currentYear.split("-").length == 2) {
+    timeDiff = true;
+  }
+
   let count = 0;
   for (let i = 0; i < REGISZTRALTAK[currentYear].length; i++) {
     let r = REGISZTRALTAK[currentYear][i];
-    console.log(r);
     let r_city = r[2];
     let r_count = r[3];
+
+    if (timeDiff)
+      r_count = r[4];
 
     if (r_city == foreign_city) {
       count += r_count;
     }
   }
-  document.getElementById('data').innerHTML += '<br>' + (language == 'en' ? 'Total voters: ' : 'Összes szavazó: ') + count;
+  document.getElementById('data').innerHTML += '<br>' + (language == 'en' ? 'Total voters: ' : 'Összes szavazó: ') + Math.round(count * 100) / 100;
+
 }
 
 function fillNationalData() {
@@ -266,6 +290,19 @@ function fillNationalData() {
 
 function fillYearDiffStats() {
   const allYears = ["2018", "2022", "2026"];
+
+  for (let fromYear of allYears) {
+    foreignCityVoters[fromYear] = {}
+    for (let i = 0; i < REGISZTRALTAK[fromYear].length; i++) {
+      let r = REGISZTRALTAK[fromYear][i];
+      let r_city = r[2];
+      let r_count = r[3];
+
+      foreignCityVoters[fromYear][r_city] = foreignCityVoters[fromYear][r_city] || 0;
+      foreignCityVoters[fromYear][r_city] += r_count;
+    }
+  }
+
   for (let fromYear of allYears) {
     for (let toYear of allYears) {
       if (fromYear >= toYear) continue;
@@ -282,7 +319,7 @@ function fillYearDiffStats() {
 
         result[r_county] = result[r_county] || {};
         result[r_county][r_code] = result[r_county][r_code] || {};
-        result[r_county][r_code][r_city] = [r_county, r_code, r_city, -r_count];
+        result[r_county][r_code][r_city] = [r_county, r_code, r_city, -r_count, -Math.round(r_count * (foreignCityVoters[toYear][''] / foreignCityVoters[fromYear]['']) * 100) / 100];
       }
 
       for (let i = 0; i < REGISZTRALTAK[toYear].length; i++) {
@@ -296,10 +333,11 @@ function fillYearDiffStats() {
         result[r_county] = result[r_county] || {};
         result[r_county][r_code] = result[r_county][r_code] || {};
         if (!result[r_county][r_code][r_city]) {
-          result[r_county][r_code][r_city] = [r_county, r_code, r_city, 0];
+          result[r_county][r_code][r_city] = [r_county, r_code, r_city, 0, Math.round(r_count * (foreignCityVoters[fromYear][''] / foreignCityVoters[toYear]['']) * 100) / 100];
         }
 
         result[r_county][r_code][r_city][3] += r_count;
+        result[r_county][r_code][r_city][4] += r_count;
       }
 
       REGISZTRALTAK[year] = [];
@@ -339,7 +377,7 @@ fillYearDiffStats();
 calculateCountyData();
 loadMarkers();
 
-const allYears = ["2018", "2022", "2026", "2018-2026", "2018-2022", "2022-2026"]
+const allYears = ["2018", "2022", "2026", "2018-2026", "2018-2022", "2022-2026"];
 
 for (let year of allYears) {
   document.getElementById('year_' + year).onclick = function () {
@@ -351,13 +389,23 @@ for (let year of allYears) {
     document.getElementById('year_' + year).classList.add("selected");
   };
 }
+
 document.getElementById('data').onclick = function () {
   currentCity = '';
   loadKor(currentCity);
 };
+
+document.getElementById('time_type').onclick = function () {
+  timeCalculationType = (timeCalculationType == 'diff') ? 'normal' : 'diff';
+  document.getElementById('time_type').innerHTML = timeCalculationType == 'normal' ? (language == 'en' ? 'Normal' : 'Normál') : (language == 'en' ? 'Time-Proportional' : 'Időarányos');
+  loadKor(currentCity);
+};
+
 document.getElementById('type').onclick = function () {
   countyCalculationType = (countyCalculationType == 'total') ? 'avg' : 'total';
   document.getElementById('type').innerHTML = countyCalculationType == 'total' ? (language == 'en' ? 'Linear' : 'Egyéni') : (language == 'en' ? 'Proportional' : 'Lakosságarányos');
   loadKor(currentCity);
 };
+
+
 document.getElementById('data').onclick();

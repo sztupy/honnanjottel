@@ -34,16 +34,34 @@ body {
 	z-index: 50;
 }
 
-#data,
-#type {
-	display: block;
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+
+#data {
 	border: 1px solid black;
 	background-color: rgba(255, 255, 255, 0.75);
 	padding: 0.25em;
+	grid-column: span 6;
+	cursor: pointer;
+}
+
+#type,
+#time_type {
+	border: 1px solid black;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 0.25em;
+	grid-column: span 3;
+	cursor: pointer;
 }
 
 #year {
 	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	max-width: 45%;
+	flex-wrap: wrap;
 	bottom: 1em;
 	left: 1em;
 	text-align: left;
@@ -51,6 +69,10 @@ body {
 	border: 1px solid black;
 	background-color: rgba(255, 255, 255, 0.75);
 	padding: 0.25em;
+}
+
+#year button {
+	grid-column: span 2;
 }
 
 #help {
@@ -71,6 +93,7 @@ button {
 	border: 1px solid black;
 	background-color: rgba(255, 255, 255, 0.75);
 	padding: 0.25em;
+	cursor: pointer;
 }
 
 button.selected {

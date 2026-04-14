@@ -14,6 +14,7 @@
   <script src="src/megye_lakos.js" charset="utf-8"></script>
   <script src="src/regisztralt.js" charset="utf-8"></script>
   <script src="src/szavazokor.js" charset="utf-8"></script>
+  <script src="src/szavazokor_2026.js" charset="utf-8"></script>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
 
@@ -31,40 +32,46 @@
   <div id="hun"></div>
   <div id="county"></div>
   <div id="data"></div>
+  <div id="year">
+    <button id="year_2018">2018</button>
+    <button id="year_2022">2022</button>
+    <button id="year_2026" class="selected">2026</button>
+  </div>
   <div id="type">Egyéni</div>
   <a class="github-fork-ribbon" href="https://github.com/sztupy/honnanjottel" data-ribbon="Info / GitHub"
     title="Info / GitHub">Info / GitHub</a>
   <script type="text/javascript">
-    var currentCity = '';
-    var countyCalculationType = 'total';
-    var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    let currentCity = '';
+    let countyCalculationType = 'total';
+    let tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
     }),
       latlng = L.latLng(30, 0);
 
-    var tiles2 = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    let tiles2 = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
     }),
       latlng2 = L.latLng(47.19801, 19.3);
 
-    var tiles3 = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    let tiles3 = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
     }),
       latlng3 = L.latLng(47.19801, 19.3);
 
-    var map = L.map('map', { center: latlng, zoom: 3, layers: [tiles] });
-    var hun = L.map('hun', { center: latlng2, zoom: 7, layers: [tiles2] });
-    var county = L.map('county', { center: latlng3, zoom: 7, layers: [tiles3] });
-    var hunLayer;
-    var countyLayer;
+    let map = L.map('map', { center: latlng, zoom: 3, layers: [tiles] });
+    let hun = L.map('hun', { center: latlng2, zoom: 7, layers: [tiles2] });
+    let county = L.map('county', { center: latlng3, zoom: 7, layers: [tiles3] });
+    let hunLayer;
+    let countyLayer;
+    let currentYear = "2026";
 
     function loadMarkers() {
       LOCATIONS.forEach(function (point) {
-        var loc = point.location;
-        var marker = L.marker(L.latLng(loc.lat, loc.lng), { title: point.hu + "\n" + point.en });
+        let loc = point.location;
+        let marker = L.marker(L.latLng(loc.lat, loc.lng), { title: point.hu + "\n" + point.en });
         marker.on('click', function () {
           currentCity = point.city;
           document.getElementById('data').innerHTML = 'Kiválasztott város: ' + point.city;
@@ -75,32 +82,42 @@
     }
 
     function handler(type, foreign_city) {
-      var max = 0;
-      var count = 0;
-      var countCounty = {}
-      REGISZTRALTAK.forEach(function (r) {
-        if (r.foreign_city == foreign_city) {
-          if (r.count > max) {
-            max = r.count;
+      let max = 0;
+      let count = 0;
+      let countCounty = {}
+      REGISZTRALTAK[currentYear].forEach(function (r) {
+        let r_county = r[0];
+        let r_city = r[2];
+        let r_count = r[3];
+        if (r_city == foreign_city) {
+          if (r_count > max) {
+            max = r_count;
           }
-          count += r.count;
-          countCounty[r.county] = countCounty[r.county] || 0;
-          countCounty[r.county] += r.count;
+          count += r_count;
+          countCounty[r_county] = countCounty[r_county] || 0;
+          countCounty[r_county] += r_count;
         }
       });
+
       if (countyCalculationType == 'avg') {
-        for (var l in countCounty) {
+        for (let l in countCounty) {
           countCounty[l] = countCounty[l] * MEGYE_LAKOSOK_FIX[l];
         }
       }
-      var maxCounty = Math.max(...Object.values(countCounty));
+      let maxCounty = Math.max(...Object.values(countCounty));
 
       return function (feature, layer) {
-        for (var i = 0; i < REGISZTRALTAK.length; i++) {
-          var r = REGISZTRALTAK[i];
-          if (r.foreign_city == foreign_city) {
-            if (r.code[0] == 'M' + feature.properties.MEGY_KOD && r.code[1] == 'E' + feature.properties.OEVK_STR) {
-              percentage = (r.count * 1.0 / max);
+        for (let i = 0; i < REGISZTRALTAK[currentYear].length; i++) {
+          let r = REGISZTRALTAK[currentYear][i];
+
+          let r_county = r[0];
+          let r_code = r[1];
+          let r_city = r[2];
+          let r_count = r[3];
+
+          if (r_city == foreign_city) {
+            if (r_county == +feature.properties.MEGY_KOD && r_code == +feature.properties.OEVK_STR) {
+              percentage = (r_count * 1.0 / max);
               if (type == 'color') {
                 value = 60 - Math.round(percentage * 60);
                 color = 'hsl(' + value + ',100%,50%)'
@@ -108,11 +125,12 @@
               };
               if (type == 'click') {
                 layer.bindPopup('<b>' + feature.properties.OEVK_NAME +
-                  '</b><br/>Szavazók: ' + r.count + ' (' + ((r.count / count) * 100).toFixed(3) + '%)');
+                  '</b><br/>Szavazók: ' + r_count + ' (' + ((r_count / count) * 100).toFixed(3) + '%)');
+                return;
               }
             }
-            if ((r.code[0] == 'M' + feature.properties.MEGY_KOD || r.code[0] == 'M0' + feature.properties.MEGY_KOD) && feature.properties.OEVK_ID == null) {
-              percentage = (countCounty[r.county] * 1.0 / maxCounty);
+            if (r_county == +feature.properties.MEGY_KOD && feature.properties.OEVK_ID == null) {
+              percentage = (countCounty[r_county] * 1.0 / maxCounty);
               if (type == 'color') {
                 value = 60 - Math.round(percentage * 60);
                 color = 'hsl(' + value + ',100%,50%)';
@@ -120,12 +138,17 @@
               }
               if (type == 'click') {
                 layer.bindPopup('<b>' + feature.properties.MEGY_NEV +
-                  '</b><br/>Szavazók: ' + countCounty[r.county] + ' (' + ((countCounty[r.county] / count) * 100).toFixed(3) + '%)');
+                  '</b><br/>Szavazók: ' + countCounty[r_county] + ' (' + ((countCounty[r_county] / count) * 100).toFixed(3) + '%)');
+                return;
               }
             }
           }
         }
-        return { color: '#AAA', fillColor: '#AAA', opacity: 1, fillOpacity: 0.25, weight: 1 };
+        if (type == 'click') {
+          layer.bindPopup('<b>' + (feature.properties.OEVK_ID == null ? feature.properties.MEGY_NEV : feature.properties.OEVK_NAME) +
+            '</b><br/>Szavazók: 0 (0%)');
+        }
+        return { color: '#000', fillColor: 'hsl(180,100%,50%)', opacity: 0.25, fillOpacity: 0.25, weight: 1 };
       }
     }
 
@@ -133,7 +156,7 @@
       if (hunLayer) {
         hun.removeLayer(hunLayer);
       }
-      hunLayer = L.geoJSON(SZAVAZOKOR, { style: handler('color', foreign_city), onEachFeature: handler('click', foreign_city) });
+      hunLayer = L.geoJSON(currentYear == "2026" ? SZAVAZOKOR26 : SZAVAZOKOR, { style: handler('color', foreign_city), onEachFeature: handler('click', foreign_city) });
       hunLayer.addTo(hun);
 
       if (countyLayer) {
@@ -144,23 +167,51 @@
     }
 
     function fillNationalData() {
-      result = {};
-      for (var i = 0; i < REGISZTRALTAK.length; i++) {
-        var r = REGISZTRALTAK[i];
-        result[r.code[0]] = result[r.code[0]] || {};
-        result[r.code[0]][r.code[1]] = result[r.code[0]][r.code[1]] || { count: 0, code: r.code, county: r.county, foreign_city: '' };
-        result[r.code[0]][r.code[1]].count += r.count;
-      }
+      for (let year in REGISZTRALTAK) {
+        let result = {};
+        for (let i = 0; i < REGISZTRALTAK[year].length; i++) {
+          let r = REGISZTRALTAK[year][i];
 
-      for (var m in result) {
-        for (var n in result[m]) {
-          REGISZTRALTAK.push(result[m][n]);
+          let r_county = r[0];
+          let r_code = r[1];
+          let r_count = r[3];
+
+          result[r_county] = result[r_county] || {};
+          result[r_county][r_code] = result[r_county][r_code] || [r_county, r_code, '', 0];
+          result[r_county][r_code][3] += r_count;
+        }
+
+        for (let m in result) {
+          for (let n in result[m]) {
+            REGISZTRALTAK[year].push(result[m][n]);
+          }
         }
       }
     }
 
     fillNationalData();
     loadMarkers();
+    document.getElementById('year_2018').onclick = function () {
+      currentYear = '2018';
+      loadKor(currentCity);
+      document.getElementById('year_2018').classList.add("selected");
+      document.getElementById('year_2022').classList.remove("selected");
+      document.getElementById('year_2026').classList.remove("selected");
+    };
+    document.getElementById('year_2022').onclick = function () {
+      currentYear = '2022';
+      loadKor(currentCity);
+      document.getElementById('year_2018').classList.remove("selected");
+      document.getElementById('year_2022').classList.add("selected");
+      document.getElementById('year_2026').classList.remove("selected");
+    };
+    document.getElementById('year_2026').onclick = function () {
+      currentYear = '2026';
+      loadKor(currentCity);
+      document.getElementById('year_2018').classList.remove("selected");
+      document.getElementById('year_2022').classList.remove("selected");
+      document.getElementById('year_2026').classList.add("selected");
+    };
     document.getElementById('data').onclick = function () {
       currentCity = '';
       loadKor(currentCity);

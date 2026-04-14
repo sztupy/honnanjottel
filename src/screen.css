@@ -10,7 +10,7 @@ body {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: 50%;
+	right: 70%;
 	z-index: 50;
 }
 
@@ -18,7 +18,7 @@ body {
 	position: absolute;
 	top: 50%;
 	bottom: 0;
-	left: 50%;
+	left: 30%;
 	right: 0;
 	border: 1px solid black;
 	z-index: 50;
@@ -28,7 +28,7 @@ body {
 	position: absolute;
 	top: 0;
 	bottom: 50%;
-	left: 50%;
+	left: 30%;
 	right: 0;
 	border: 1px solid black;
 	z-index: 50;
@@ -102,4 +102,18 @@ button.selected {
 
 a {
 	text-decoration: none;
+}
+
+@media (max-aspect-ratio: 4/3) {
+	#map {
+		right: 60%;
+	}
+
+	#hun {
+		left: 40%;
+	}
+
+	#county {
+		left: 40%;
+	}
 }

@@ -64,7 +64,7 @@
     function loadMarkers() {
       LOCATIONS.forEach(function (point) {
         var loc = point.location;
-        var marker = L.marker(L.latLng(loc.lat, loc.lng), { title: point.description });
+        var marker = L.marker(L.latLng(loc.lat, loc.lng), { title: point.hu + "\n" + point.en });
         marker.on('click', function () {
           currentCity = point.city;
           document.getElementById('data').innerHTML = 'Kiválasztott város: ' + point.city;

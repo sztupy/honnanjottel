@@ -68,6 +68,35 @@
     let countyLayer;
     let currentYear = "2026";
 
+    let MEGYE_MAX = {};
+    let MEGYE_LAKOSOK_FIX = {};
+
+    for (let year in MEGYE_LAKOSOK) {
+      let max = 0;
+      let maxD = 0;
+      for (let county in MEGYE_LAKOSOK[year]) {
+        if (county == 0) continue;
+        let count = 0;
+        for (let oevks in MEGYE_LAKOSOK[year][county]) {
+          if (MEGYE_LAKOSOK[year][county][oevks]) {
+            count += +MEGYE_LAKOSOK[year][county][oevks];
+          }
+        }
+        MEGYE_LAKOSOK[year][county][0] = count;
+        if (count > max) max = count;
+      }
+      MEGYE_LAKOSOK[year][0] = max;
+
+      MEGYE_LAKOSOK_FIX[year] = [];
+
+      for (let county in MEGYE_LAKOSOK[year]) {
+        if (county == 0) continue;
+        MEGYE_LAKOSOK_FIX[year][county] = MEGYE_LAKOSOK[year][0] / MEGYE_LAKOSOK[year][county][0];
+      }
+    }
+
+    console.log(MEGYE_LAKOSOK_FIX);
+
     function loadMarkers() {
       LOCATIONS.forEach(function (point) {
         let loc = point.location;
@@ -101,7 +130,7 @@
 
       if (countyCalculationType == 'avg') {
         for (let l in countCounty) {
-          countCounty[l] = countCounty[l] * MEGYE_LAKOSOK_FIX[l];
+          countCounty[l] = countCounty[l] * MEGYE_LAKOSOK_FIX[currentYear][l];
         }
       }
       let maxCounty = Math.max(...Object.values(countCounty));

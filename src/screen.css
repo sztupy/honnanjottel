@@ -34,23 +34,9 @@ body {
 	z-index: 50;
 }
 
-#data {
-	position: absolute;
-	bottom: 1em;
-	right: 1em;
-	text-align: right;
-	z-index: 100;
-	border: 1px solid black;
-	background-color: rgba(255, 255, 255, 0.75);
-	padding: 0.25em;
-}
-
+#data,
 #type {
-	position: absolute;
-	bottom: 52%;
-	right: 1em;
-	text-align: right;
-	z-index: 100;
+	display: block;
 	border: 1px solid black;
 	background-color: rgba(255, 255, 255, 0.75);
 	padding: 0.25em;
@@ -67,6 +53,30 @@ body {
 	padding: 0.25em;
 }
 
+#help {
+	position: absolute;
+	overflow: auto;
+	bottom: 1em;
+	left: 1em;
+	right: 1em;
+	top: 1em;
+	z-index: 200;
+	border: 1px solid black;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 1em;
+	margin: 0;
+}
+
+button {
+	border: 1px solid black;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 0.25em;
+}
+
 button.selected {
 	background-color: lightgreen;
+}
+
+a {
+	text-decoration: none;
 }

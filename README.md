@@ -6,9 +6,9 @@ Visit the page at: http://sztupy.hu/honnanjottel/
 
 # Honnan jöttél
 
-A 2018 választás külképviseleti adataiból kimutatás, hogy feltehetőleg Magyarország mely területeiről emigráltak az emberek.
+A magyar OGY választás külképviseleti adataiból kimutatás, hogy feltehetőleg Magyarország mely területeiről emigráltak az emberek.
 
-A választóköri térképadatok az index.hu 2018-as választási térképéből lettek kinyerve, míg a statisztikai adatokat a valasztas.hu szolgáltatta
+A választóköri térképadatok az index.hu 2018-as valamint 2026-os választási térképéből lettek kinyerve, míg a statisztikai adatokat a valasztas.hu szolgáltatta
 
 A térkép itt megtekinthető: http://sztupy.hu/honnanjottel/
 

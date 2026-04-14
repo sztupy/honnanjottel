@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Honnan Jöttél</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="origin">
+  <link rel="stylesheet" href="src/screen.css" />
+  <script src="src/points.js" charset="utf-8"></script>
+  <script src="src/megye.js" charset="utf-8"></script>
+  <script src="src/megye_lakos.js" charset="utf-8"></script>
+  <script src="src/regisztralt.js" charset="utf-8"></script>
+  <script src="src/szavazokor.js" charset="utf-8"></script>
+  <script src="src/szavazokor_2026.js" charset="utf-8"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+
+  <meta property="og:image" content="https://sztupy.hu/honnanjottel/img/preview.png" />
+  <meta property="og:site_name" content="sztupy.hu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Honnan jöttél" />
+  <meta property="og:url" content="https://sztupy.hu/honnajottel" />
+  <meta property="og:description" content="Magyar emigrációs térkép a választási adatok alapján" />
+  <script>localStorage.setItem('language', 'hu');</script>
+</head>
+
+<body>
+  <script src="https://sztupy.hu/assets/js/logo.js"></script>
+  <div id="help">
+    <a href="index_en.html">🏴󠁧󠁢󠁥󠁮󠁧󠁿 For English version please click here</a>
+    <h1>Honnan jöttél</h1>
+    <p>A magyar választási rendszer egyik különlegessége, hogy nyomon követhetőve teszi, hogy melyik külképviseletre
+      honnan jöttek oda a szavazók. Tény, hogy ezen szavazók egy része olyan lesz, aki ideiglenesen tartózkodik a
+      választás környékén a külképviselet közelében (pl. éppen ott nyaral), de számos helyszínnél valószínűbb, hogy már
+      hosszú távra külföldön élő, külföldre költözött illetőkről van szó. Esetükben, mivel a magyar rendszerben nem
+      kötelező leadni a magyar lakcímet kiköltüzés előtt, esélyes hogy a választási rendszerben utolsó magyar lakcímük
+      szerepel, azaz az a hely ahonnan kiköltöztek</p>
+    <p>Ez a honlap térképes formában próbálja bemutatni, hogy mely külképviselet közelében honnan érkeztek magyarok</p>
+    <h2>Használat</h2>
+    <p>A bal oldalon találhatóak a külképviseletek. Bármelyikre kattintva a jobb oldalon láhatóvá válik hogy melyik
+      megyéből / választókerületből voltak ott voksolni a választáson. Alapértelmezettben a sárga szín a kevesebb, a
+      piros a több embert jelöli.</p>
+    <p>A bal alsó sarokban lehet változtatni azon, hogy melyik év adatsorát szeretnénk nézni. Ha összehasonlító évet
+      választunk, akkor a világoskék szín fogja jelenteni az enyhe, a sötétkép az erős létszámcsökkenést, míg a sárga és
+      piros a létszámnövekvést</p>
+    <p>Az "Egyéni" gombra kattintva választhatunk hogy a megyék / választókörzetekben abszolút értékben legyenek a
+      választópolgárok szinezve, vagy kiegyenlített módon - a kevesebb lakossal rendelkező megyék arányosan sötétebb
+      színnel legyenek ábrázolva.</p>
+    <p>Amennyiben a beépített színezés nem lenne megfelelő <button onclick="swapColors()">ide kattintva</button> színek
+      helyett
+      fekete-fehér árnyalatokkal lesz az eredmény bemutatva</p>
+    <p>Ha újra a globális külképviseleti szavazati térképet szeretnénk nézni, csak kattintani kell a "Kiválasztott
+      külképviselet" gombra, balra lent.</p>
+    <button onclick="hideHelp()">Megértettem, szeretném nézni a térképet</button>
+  </div>
+  <div id="map"></div>
+  <div id="hun"></div>
+  <div id="county"></div>
+  <div id="year">
+    <button id="year_2018">2018</button>
+    <button id="year_2022">2022</button>
+    <button id="year_2026" class="selected">2026</button>
+    <button id="year_2018-2022">2018-2022</button>
+    <button id="year_2022-2026">2022-2026</button>
+    <button id="year_2018-2026">2018-2026</button>
+    <div id="data"></div>
+    <div id="type">Egyéni</div>
+  </div>
+  <a class="github-fork-ribbon" href="https://github.com/sztupy/honnanjottel" data-ribbon="Info / GitHub"
+    title="Info / GitHub">Info / GitHub</a>
+  <script src="src/app.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-9404141-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
